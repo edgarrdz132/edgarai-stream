@@ -760,7 +760,7 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
 // ═══ CONFIG ═══
 const EDGAR_IMG = './edgarai.jpg';
 const SUPABASE_URL = 'https://jelxossqzywochqsszsq.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImplbHhvc3Nxenl3b2NocXNzenNxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM5ODc4NDIsImV4cCI6MjA4OTU2Mzg0Mn0.7aPdziXzWjfO6WsMNFnX0k8hOCHZKr1SchhsEwdZ6tM';
+const SUPABASE_KEY = 'sb_publissable_ZYKjRwH_9vkGVkNh5KbWWg_Y4szeHK3';
 const TMDB_KEY = '8265bd1679663a7ea12ac168da84d2e8';
 const TMDB_BASE = 'https://api.themoviedb.org/3';
 const IMG_W = 'https://image.tmdb.org/t/p/w500';
@@ -1137,14 +1137,14 @@ async function initApp(user){
   currentUser = user;
   const {data:profile} = await sb.from('profiles').select('*').eq('id', user.id).single();
   if(!profile || !profile.username){ showProfileSetup(user); return; }
- currentProfile = profile;
+  currentProfile = profile;
   const variant = AV_VARIANTS.find(function(v){ return v.id === profile.avatar; }) || AV_VARIANTS[0];
-  const nameEl = $('navName'); if(nameEl) nameEl.textContent = profile.username;
-  const navImg = $('navUserImg'); if(navImg){ navImg.src = EDGAR_IMG; navImg.style.filter = variant.filter; }
-  const avImg = $('profileAvImg'); if(avImg){ avImg.src = EDGAR_IMG; avImg.style.filter = variant.filter; }
-  const nameBig = $('profileNameBig'); if(nameBig) nameBig.textContent = profile.username;
-  const emailBig = $('profileEmailBig'); if(emailBig) emailBig.textContent = user.email;
-  const editNameEl = $('editName'); if(editNameEl) editNameEl.value = profile.username;
+  $('navName').textContent = profile.username;
+  const navImg = $('navUserImg'); navImg.src = EDGAR_IMG; navImg.style.filter = variant.filter;
+  const avImg = $('profileAvImg'); avImg.src = EDGAR_IMG; avImg.style.filter = variant.filter;
+  $('profileNameBig').textContent = profile.username;
+  $('profileEmailBig').textContent = user.email;
+  $('editName').value = profile.username;
   buildAvatarGrid('editAvatarGrid', profile.avatar || 'original');
   setScreen('appScreen');
   initSearch();
