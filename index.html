@@ -17,7 +17,6 @@
 html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--white);font-family:'Barlow Condensed',sans-serif;min-height:100vh;overflow-x:hidden;}
 ::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:var(--bg);}::-webkit-scrollbar-thumb{background:var(--red);border-radius:2px;}
-
 .btn{display:inline-flex;align-items:center;gap:.45rem;padding:.65rem 1.5rem;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:.95rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border:none;transition:all .2s;white-space:nowrap;}
 .btn-red{background:var(--red);color:#fff;box-shadow:0 0 20px rgba(229,9,20,.3);}
 .btn-red:hover{background:var(--red2);transform:translateY(-1px);}
@@ -28,16 +27,12 @@ body{background:var(--bg);color:var(--white);font-family:'Barlow Condensed',sans
 .btn-full{width:100%;justify-content:center;}
 .btn-sm{padding:.35rem .8rem;font-size:.78rem;}
 .btn:disabled{opacity:.4;cursor:not-allowed;transform:none!important;}
-
 .field{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1rem;}
 .field label{font-size:.7rem;font-weight:700;color:var(--muted2);letter-spacing:1.5px;text-transform:uppercase;font-family:'Share Tech Mono',monospace;}
 .field input{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:.7rem 1rem;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-size:1rem;outline:none;transition:all .2s;}
 .field input:focus{border-color:var(--red);box-shadow:0 0 10px rgba(229,9,20,.15);}
 .field input::placeholder{color:var(--muted);}
-
 .screen{display:none;min-height:100vh;}.screen.active{display:flex;}
-
-/* AUTH */
 #authScreen{align-items:stretch;background:var(--bg);}
 .auth-left{flex:1;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:100vh;}
 .auth-left-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.35) saturate(1.2);}
@@ -66,10 +61,6 @@ body{background:var(--bg);color:var(--white);font-family:'Barlow Condensed',sans
 .msg.error{background:rgba(229,9,20,.1);border:1px solid rgba(229,9,20,.3);color:#ff6b6b;}
 .msg.success{background:rgba(0,230,118,.1);border:1px solid rgba(0,230,118,.3);color:var(--green);}
 .msg.show{display:block;}
-.guest-btn{margin-top:.75rem;display:block;text-align:center;font-size:.78rem;color:var(--muted2);cursor:pointer;font-family:'Share Tech Mono',monospace;letter-spacing:1px;text-decoration:underline;transition:color .2s;}
-.guest-btn:hover{color:var(--cyan);}
-
-/* APP */
 #appScreen{flex-direction:column;}
 .navbar{position:sticky;top:0;z-index:200;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;background:linear-gradient(to bottom,rgba(8,8,8,.98),rgba(8,8,8,.85));border-bottom:1px solid rgba(255,255,255,.05);backdrop-filter:blur(16px);}
 .brand{display:flex;align-items:center;gap:.7rem;cursor:pointer;}
@@ -96,9 +87,7 @@ body{background:var(--bg);color:var(--white);font-family:'Barlow Condensed',sans
 .dd-item:last-child{border-bottom:none;}
 .dd-item:hover{background:rgba(255,255,255,.06);}
 .dd-item.danger:hover{background:rgba(229,9,20,.08);color:#ff6b6b;}
-
 .page{display:none;}.page.active{display:block;}
-
 .hero{position:relative;height:85vh;min-height:560px;display:flex;align-items:flex-end;padding:0 2.5rem 4rem;overflow:hidden;}
 .hero-bg-img{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.3);}
 .hero-ov1{position:absolute;inset:0;background:linear-gradient(to top,var(--bg) 0%,rgba(8,8,8,.6) 40%,transparent 70%);}
@@ -118,24 +107,20 @@ body{background:var(--bg);color:var(--white);font-family:'Barlow Condensed',sans
 .hero-meta .tag{background:rgba(229,9,20,.15);border:1px solid rgba(229,9,20,.3);border-radius:3px;padding:1px 6px;font-size:.68rem;color:var(--red);font-family:'Share Tech Mono',monospace;}
 .hero-desc{font-size:.92rem;color:rgba(255,255,255,.6);line-height:1.7;max-width:420px;margin-bottom:1.5rem;}
 .hero-btns{display:flex;gap:.75rem;flex-wrap:wrap;}
-
 .section{padding:1.75rem 2.5rem;}
 .sec-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.1rem;}
 .sec-title{font-family:'Bebas Neue',cursive;font-size:1.35rem;letter-spacing:2px;display:flex;align-items:center;gap:.5rem;}
 .sec-title::before{content:'';width:3px;height:20px;border-radius:2px;background:var(--red);flex-shrink:0;}
 .sec-link{font-size:.7rem;color:var(--red);cursor:pointer;font-family:'Share Tech Mono',monospace;letter-spacing:1px;opacity:.8;transition:opacity .2s;}
 .sec-link:hover{opacity:1;}
-
 .tabs{display:flex;gap:.35rem;margin-bottom:1.25rem;flex-wrap:wrap;}
 .tab{padding:.38rem .88rem;border-radius:3px;font-size:.8rem;font-weight:700;letter-spacing:.8px;cursor:pointer;color:var(--muted2);border:1px solid transparent;background:transparent;font-family:'Barlow Condensed',sans-serif;transition:all .2s;text-transform:uppercase;}
 .tab.active{color:#fff;background:var(--red);border-color:var(--red);}
 .tab:hover:not(.active){color:var(--white);background:rgba(255,255,255,.06);}
-
 .grid-m{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.75rem;}
 .grid-s{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:.75rem;}
 .grid-ch{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem;}
 .grid-m3u{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.75rem;}
-
 .card{position:relative;border-radius:4px;overflow:hidden;background:var(--card);cursor:pointer;border:1px solid rgba(255,255,255,.04);transition:transform .25s,box-shadow .25s;animation:fadeUp .4s ease both;}
 .card:hover{transform:scale(1.05) translateY(-4px);box-shadow:0 20px 50px rgba(0,0,0,.8),0 0 20px rgba(229,9,20,.12);z-index:5;}
 .card-thumb{width:100%;aspect-ratio:2/3;position:relative;overflow:hidden;background:#111;display:flex;align-items:center;justify-content:center;font-size:3rem;}
@@ -153,7 +138,6 @@ body{background:var(--bg);color:var(--white);font-family:'Barlow Condensed',sans
 .card-meta2 .s{color:var(--gold);}
 .mini-bar{height:2px;background:rgba(255,255,255,.06);border-radius:1px;margin-top:.45rem;overflow:hidden;}
 .mini-fill{height:100%;background:var(--red);border-radius:1px;}
-
 .ch-card{background:var(--card);border:1px solid rgba(255,255,255,.05);border-radius:4px;padding:1rem;cursor:pointer;transition:all .2s;position:relative;overflow:hidden;}
 .ch-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .3s;}
 .ch-card:hover{transform:translateY(-3px);border-color:rgba(229,9,20,.2);}
@@ -167,7 +151,6 @@ body{background:var(--bg);color:var(--white);font-family:'Barlow Condensed',sans
 .ch-prog{font-size:.7rem;color:var(--muted2);}
 .ch-prog-bar{margin-top:.75rem;height:2px;background:rgba(255,255,255,.06);border-radius:1px;overflow:hidden;}
 .ch-prog-fill{height:100%;background:var(--red);border-radius:1px;}
-
 .m3u-card{background:var(--card);border:1px solid rgba(255,255,255,.05);border-radius:4px;padding:1.1rem;cursor:pointer;transition:all .2s;animation:fadeUp .4s ease both;}
 .m3u-card:hover{transform:translateY(-3px);border-color:rgba(229,9,20,.25);}
 .m3u-card-top{display:flex;align-items:center;gap:.7rem;margin-bottom:.65rem;}
@@ -176,13 +159,10 @@ body{background:var(--bg);color:var(--white);font-family:'Barlow Condensed',sans
 .m3u-card-count{font-size:.68rem;color:var(--red);font-family:'Share Tech Mono',monospace;}
 .m3u-card-desc{font-size:.72rem;color:var(--muted2);line-height:1.5;margin-bottom:.85rem;}
 .m3u-btns{display:flex;gap:.4rem;}
-
 .strip{background:rgba(229,9,20,.06);border-bottom:1px solid rgba(229,9,20,.12);padding:.5rem 2.5rem;display:flex;align-items:center;gap:.75rem;overflow:hidden;}
 .strip-badge{font-family:'Share Tech Mono',monospace;font-size:.6rem;letter-spacing:2px;background:var(--red);color:#fff;padding:2px 6px;border-radius:2px;font-weight:700;flex-shrink:0;}
 .strip-text{font-size:.78rem;color:rgba(255,255,255,.5);white-space:nowrap;animation:marquee 35s linear infinite;}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
-/* MODAL */
 .modal{display:none;position:fixed;inset:0;z-index:400;align-items:center;justify-content:center;background:rgba(0,0,0,.92);backdrop-filter:blur(10px);padding:1rem;}
 .modal.open{display:flex;}
 .modal-box{background:var(--bg2);border:1px solid rgba(255,255,255,.08);border-radius:10px;width:min(900px,97vw);max-height:92vh;overflow:hidden;animation:mIn .25s ease;display:flex;flex-direction:column;}
@@ -198,28 +178,21 @@ body{background:var(--bg);color:var(--white);font-family:'Barlow Condensed',sans
 .modal-meta2{display:flex;gap:.75rem;font-size:.75rem;color:var(--muted2);flex-wrap:wrap;font-family:'Share Tech Mono',monospace;margin-bottom:.75rem;}
 .modal-desc2{font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:1rem;}
 .modal-acts{display:flex;gap:.55rem;flex-wrap:wrap;}
-
-/* SOURCE SWITCHER */
 .source-switcher{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.75rem;}
 .source-btn{padding:.3rem .7rem;border-radius:3px;font-size:.72rem;font-weight:700;letter-spacing:.5px;cursor:pointer;color:var(--muted2);border:1px solid rgba(255,255,255,.1);background:transparent;font-family:'Share Tech Mono',monospace;transition:all .2s;}
 .source-btn.active{color:#fff;background:rgba(229,9,20,.3);border-color:var(--red);}
 .source-btn:hover:not(.active){color:var(--white);background:rgba(255,255,255,.06);}
-
-/* SUBTITLES */
 .subtitle-bar{display:flex;align-items:center;gap:.5rem;margin-bottom:.75rem;padding:.5rem .75rem;background:rgba(0,245,255,.05);border:1px solid rgba(0,245,255,.15);border-radius:4px;}
 .subtitle-bar label{font-size:.7rem;color:var(--cyan);font-family:'Share Tech Mono',monospace;letter-spacing:1px;margin-right:.25rem;}
 .subtitle-select{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:3px;padding:.3rem .6rem;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-size:.85rem;outline:none;cursor:pointer;}
-
 .notice{background:rgba(229,9,20,.06);border:1px solid rgba(229,9,20,.15);border-radius:6px;padding:.65rem 1rem;font-size:.78rem;color:rgba(229,9,20,.9);margin-bottom:1.1rem;line-height:1.5;}
 .spinner{width:30px;height:30px;border:3px solid rgba(255,255,255,.08);border-top-color:var(--red);border-radius:50%;animation:spin .8s linear infinite;margin:2.5rem auto;display:block;}
 @keyframes spin{to{transform:rotate(360deg)}}
 .loading-wrap{display:flex;flex-direction:column;align-items:center;padding:2.5rem;gap:.85rem;color:var(--muted2);font-family:'Share Tech Mono',monospace;font-size:.78rem;}
 .ndiv{height:1px;margin:0 2.5rem;background:linear-gradient(90deg,transparent,rgba(255,255,255,.06),transparent);}
-
 footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-top:1rem;}
 .foot-brand{font-family:'Bebas Neue',cursive;font-size:1.3rem;letter-spacing:2px;color:var(--red);}
 .foot-mono{font-size:.68rem;color:var(--muted);font-family:'Share Tech Mono',monospace;margin-top:.12rem;}
-
 .toast-wrap{position:fixed;bottom:1.5rem;right:1.5rem;z-index:9000;display:flex;flex-direction:column;gap:.45rem;}
 .toast{background:var(--bg2);border:1px solid rgba(255,255,255,.08);border-radius:6px;padding:.65rem 1rem;font-size:.8rem;display:flex;align-items:center;gap:.5rem;animation:tIn .3s ease;box-shadow:0 8px 30px rgba(0,0,0,.5);min-width:200px;}
 .toast.ok{border-color:rgba(0,230,118,.3);color:var(--green);}
@@ -227,7 +200,6 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
 .toast.inf{border-color:rgba(0,245,255,.25);color:var(--cyan);}
 @keyframes tIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-
 .radio-card{background:var(--card);border:1px solid rgba(255,255,255,.05);border-radius:4px;padding:1.1rem;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:.85rem;}
 .radio-card:hover{border-color:rgba(0,245,255,.25);transform:translateY(-2px);}
 .radio-icon{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#1a1a2e,#0d0d1a);display:flex;align-items:center;justify-content:center;font-size:1.4rem;border:1px solid rgba(0,245,255,.15);flex-shrink:0;}
@@ -235,7 +207,6 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
 .radio-name{font-weight:700;font-size:.9rem;margin-bottom:.15rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .radio-genre{font-size:.7rem;color:var(--cyan);font-family:'Share Tech Mono',monospace;}
 .grid-radio{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.75rem;}
-
 .hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;cursor:pointer;padding:.4rem;border:none;background:transparent;z-index:201;}
 .hamburger span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;transition:all .3s;}
 .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
@@ -254,7 +225,6 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
 .mbb-item.active{color:var(--red);}
 .mbb-item .mbb-icon{font-size:1.2rem;}
 .mbb-item .mbb-label{font-size:.5rem;font-family:'Share Tech Mono',monospace;letter-spacing:.5px;text-transform:uppercase;}
-
 @media(max-width:900px){
   .auth-left{display:none;}.auth-right{width:100%;min-width:unset;border-left:none;}
   .navbar{padding:0 1rem;height:54px;}.nav-links{display:none;}.nav-search{display:none;}
@@ -335,7 +305,6 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
         <div class="auth-divider"><span>o</span></div>
         <button class="btn btn-ghost btn-full" id="btnGoLogin">← Volver al Login</button>
       </div>
-      <!-- ACCESO SIN CUENTA -->
       <div class="auth-divider" style="margin-top:1.2rem"><span>acceso rápido</span></div>
       <button class="btn btn-ghost btn-full" id="btnGuest" style="border-color:rgba(0,245,255,.3);color:var(--cyan);">👁 ENTRAR SIN CUENTA</button>
     </div>
@@ -413,7 +382,7 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
 
   <div class="strip">
     <span class="strip-badge">EN VIVO</span>
-    <span class="strip-text">  ▶ Películas · Series · Anime · Caricaturas · Deportes · Telenovelas · Radio · Canales en Vivo · Listas M3U · +50 países · Subtítulos disponibles     ▶ Películas · Series · Anime · Caricaturas · Deportes · Telenovelas · Radio · Canales en Vivo · Listas M3U · +50 países · Subtítulos disponibles</span>
+    <span class="strip-text">  ▶ Películas · Series · Anime · Caricaturas · Deportes · Telenovelas · Radio · Canales en Vivo · Listas M3U · +50 países · Subtítulos en Español     ▶ Películas · Series · Anime · Caricaturas · Deportes · Telenovelas · Radio · Canales en Vivo · Listas M3U · +50 países · Subtítulos en Español</span>
   </div>
 
   <!-- INICIO -->
@@ -425,7 +394,7 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
         <div class="hero-eyebrow">DESTACADO HOY</div>
         <h1 class="hero-title" id="heroTitle"><span class="t1">CARGANDO</span><span class="t2">CONTENIDO</span></h1>
         <div class="hero-meta" id="heroMeta"></div>
-        <p class="hero-desc" id="heroDesc">Bienvenido a EdgarAI Stream, tu plataforma de entretenimiento.</p>
+        <p class="hero-desc" id="heroDesc">Bienvenido a EdgarAI Stream.</p>
         <div class="hero-btns">
           <button class="btn btn-red" id="heroPlayBtn">▶ REPRODUCIR</button>
           <button class="btn btn-ghost" id="heroInfoBtn">ℹ MÁS INFO</button>
@@ -489,7 +458,6 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
         <button class="tab" data-genre="10759">Acción</button>
         <button class="tab" data-genre="9648">Misterio</button>
         <button class="tab" data-genre="10762">Infantil</button>
-        <button class="tab" data-genre="10763">Noticias</button>
       </div>
       <div class="grid-s" id="allSeries"><div class="loading-wrap"><div class="spinner"></div><span>Cargando...</span></div></div>
       <div id="seriesPagination" style="text-align:center;padding:1.5rem 0;display:none;">
@@ -625,7 +593,7 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
   </div>
 </div>
 
-<!-- MODAL REPRODUCTOR -->
+<!-- MODAL -->
 <div class="modal" id="modal">
   <div class="modal-box" style="width:min(960px,97vw);">
     <div class="modal-vid">
@@ -638,8 +606,6 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
       <div class="modal-title2" id="mTitle">—</div>
       <div class="modal-meta2" id="mMeta"></div>
       <div class="modal-desc2" id="mDesc">—</div>
-
-      <!-- Selector episodios -->
       <div id="episodeSelector" style="display:none;margin-bottom:1rem;">
         <div style="display:flex;gap:.65rem;align-items:center;flex-wrap:wrap;">
           <div>
@@ -655,28 +621,23 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
           </div>
         </div>
       </div>
-
-      <!-- Subtítulos -->
       <div id="subtitleBar" style="display:none;" class="subtitle-bar">
         <label>🔤 SUBTÍTULOS:</label>
         <select class="subtitle-select" id="subtitleLang">
-          <option value="es">Español</option>
+          <option value="es" selected>Español</option>
           <option value="en">Inglés</option>
           <option value="pt">Portugués</option>
           <option value="fr">Francés</option>
           <option value="de">Alemán</option>
           <option value="off">Sin subtítulos</option>
         </select>
-        <span style="font-size:.68rem;color:var(--muted2);font-family:'Share Tech Mono',monospace;">(incluidos en el reproductor)</span>
+        <span style="font-size:.68rem;color:var(--muted2);font-family:'Share Tech Mono',monospace;">(depende de disponibilidad)</span>
       </div>
-
-      <!-- Fuentes -->
       <div id="sourceSwitcher" style="display:none;margin-bottom:.75rem;">
-        <div style="font-size:.65rem;color:var(--muted2);font-family:'Share Tech Mono',monospace;letter-spacing:1px;margin-bottom:.4rem;">🔀 CAMBIAR FUENTE DE REPRODUCCIÓN</div>
+        <div style="font-size:.65rem;color:var(--muted2);font-family:'Share Tech Mono',monospace;letter-spacing:1px;margin-bottom:.4rem;">🔀 CAMBIAR FUENTE</div>
         <div class="source-switcher" id="sourceButtons"></div>
         <div style="font-size:.65rem;color:var(--muted);font-family:'Share Tech Mono',monospace;margin-top:.3rem;">Si una fuente no carga, prueba otra.</div>
       </div>
-
       <div class="modal-acts">
         <button class="btn btn-red" id="btnModalPlay">▶ REPRODUCIR</button>
         <button class="btn btn-ghost" id="btnModalClose">✕ CERRAR</button>
@@ -689,9 +650,9 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
 
 <script>
 // ═══ CONFIG ═══
-const EDGAR_IMG = './edgarai.jpg';
+const EDGAR_IMG = 'https://jelxossqzywochqsszsq.supabase.co/storage/v1/object/public/assets/edgarai.jpg';
 const SUPABASE_URL = 'https://jelxossqzywochqsszsq.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.YOUR_REAL_ANON_KEY_HERE'; // ← Reemplaza con tu anon key real
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImplbHhvc3Nxenl3b2NocXNzenNxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM5ODc4NDIsImV4cCI6MjA4OTU2Mzg0Mn0.7aPdziXzWjfO6WsMNFnX0k8hOCHZKr1SchhsEwdZ6tM'; // ← pon tu anon key real
 const TMDB_KEY = '8265bd1679663a7ea12ac168da84d2e8';
 const TMDB_BASE = 'https://api.themoviedb.org/3';
 const IMG_W = 'https://image.tmdb.org/t/p/w500';
@@ -700,21 +661,20 @@ const IMG_ORI = 'https://image.tmdb.org/t/p/original';
 let sb = null;
 try { sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY); } catch(e) {}
 
-// ═══ FUENTES DE REPRODUCCIÓN ═══
-// Usar vidsrc.to como principal - funciona sin bloqueos en móvil y PC
+// ═══ FUENTES CON SUBTÍTULOS EN ESPAÑOL ═══
 const EMBED_SOURCES_MOVIE = [
-  function(id){ return 'https://vidsrc.to/embed/movie/'+id; },
-  function(id){ return 'https://vidsrc.xyz/embed/movie?tmdb='+id; },
-  function(id){ return 'https://vidsrc.cc/v2/embed/movie/'+id; },
-  function(id){ return 'https://multiembed.mov/?video_id='+id+'&tmdb=1'; },
-  function(id){ return 'https://player.videasy.net/movie/'+id; },
+  function(id,lang){ return 'https://vidsrc.to/embed/movie/'+id+'?ds_lang='+(lang||'es'); },
+  function(id,lang){ return 'https://vidsrc.xyz/embed/movie?tmdb='+id+'&ds_lang='+(lang||'es'); },
+  function(id,lang){ return 'https://vidsrc.cc/v2/embed/movie/'+id+'?ds_lang='+(lang||'es'); },
+  function(id,lang){ return 'https://multiembed.mov/?video_id='+id+'&tmdb=1&ds_lang='+(lang||'es'); },
+  function(id,lang){ return 'https://player.videasy.net/movie/'+id+'?lang='+(lang||'es'); },
 ];
 const EMBED_SOURCES_TV = [
-  function(id,s,e){ return 'https://vidsrc.to/embed/tv/'+id+'/'+s+'/'+e; },
-  function(id,s,e){ return 'https://vidsrc.xyz/embed/tv?tmdb='+id+'&season='+s+'&episode='+e; },
-  function(id,s,e){ return 'https://vidsrc.cc/v2/embed/tv/'+id+'/'+s+'/'+e; },
-  function(id,s,e){ return 'https://multiembed.mov/?video_id='+id+'&tmdb=1&s='+s+'&e='+e; },
-  function(id,s,e){ return 'https://player.videasy.net/tv/'+id+'/'+s+'/'+e; },
+  function(id,s,e,lang){ return 'https://vidsrc.to/embed/tv/'+id+'/'+s+'/'+e+'?ds_lang='+(lang||'es'); },
+  function(id,s,e,lang){ return 'https://vidsrc.xyz/embed/tv?tmdb='+id+'&season='+s+'&episode='+e+'&ds_lang='+(lang||'es'); },
+  function(id,s,e,lang){ return 'https://vidsrc.cc/v2/embed/tv/'+id+'/'+s+'/'+e+'?ds_lang='+(lang||'es'); },
+  function(id,s,e,lang){ return 'https://multiembed.mov/?video_id='+id+'&tmdb=1&s='+s+'&e='+e+'&ds_lang='+(lang||'es'); },
+  function(id,s,e,lang){ return 'https://player.videasy.net/tv/'+id+'/'+s+'/'+e+'?lang='+(lang||'es'); },
 ];
 const SOURCE_NAMES = ['VidSrc.to ✓','VidSrc XYZ','VidSrc CC','MultiEmbed','Videasy'];
 
@@ -745,7 +705,7 @@ const DEMO_CH = [
   {name:'HLS Demo HD',prog:'Stream de prueba',icon:'📡',group:'Test',url:'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8',progress:75},
   {name:'NHK World',prog:'Japón internacional',icon:'🇯🇵',group:'Internacional',url:'https://nhkwlive-ojp.akamaized.net/hls/live/2003459/nhkwlive-ojp-en/index_1M.m3u8',progress:55},
   {name:'Euronews ES',prog:'Noticias europeas',icon:'🇪🇺',group:'Noticias',url:'https://euronews-euronews-es-1-es.rakuten.wurl.tv/playlist.m3u8',progress:60},
-  {name:'Animación Demo',prog:'Animación test',icon:'🐰',group:'Entretenimiento',url:'https://test-streams.mux.dev/tos_ismc/master.m3u8',progress:20},
+  {name:'Animación Demo',prog:'Test animación',icon:'🐰',group:'Entretenimiento',url:'https://test-streams.mux.dev/tos_ismc/master.m3u8',progress:20},
 ];
 
 const RADIO_STATIONS = [
@@ -768,72 +728,57 @@ let currentUser = null;
 let m3uRegion = 'all', loadedM3U = [], currentPlayer = null;
 let radioGenre = 'all';
 let currentModalType = 'movie', currentModalId = null, currentSeason = 1, currentEpisode = 1;
+let currentSubLang = 'es';
 let heroItem = null;
 const pages_state = {movies:{page:1,genre:0},series:{page:1,genre:0},anime:{page:1,lang:'ja'},caricaturas:{page:1,lang:'all'},telenovelas:{page:1,country:'MX'}};
 
 // ═══ UTILS ═══
 function $(id){ return document.getElementById(id); }
 function toast(msg, type){
-  type = type || 'inf';
+  type = type||'inf';
   const el = document.createElement('div');
-  el.className = 'toast ' + type;
-  el.innerHTML = '<span>'+(type==='ok'?'✅':type==='err'?'❌':'ℹ️')+'</span> ' + msg;
+  el.className = 'toast '+type;
+  el.innerHTML = '<span>'+(type==='ok'?'✅':type==='err'?'❌':'ℹ️')+'</span> '+msg;
   $('toastWrap').appendChild(el);
   setTimeout(function(){ if(el.parentNode) el.remove(); }, 3500);
 }
-function showMsg(id, text, type){
-  type = type || 'error';
-  const el = $(id); if(!el) return;
-  el.textContent = text;
-  el.className = 'msg ' + type + ' show';
+function showMsg(id,text,type){
+  type=type||'error';
+  const el=$(id);if(!el)return;
+  el.textContent=text;el.className='msg '+type+' show';
 }
-function hideMsg(id){ const el = $(id); if(el) el.className = 'msg'; }
+function hideMsg(id){ const el=$(id);if(el) el.className='msg'; }
 function setScreen(id){
-  document.querySelectorAll('.screen').forEach(function(s){ s.classList.remove('active'); });
-  const el = $(id); if(el) el.classList.add('active');
+  document.querySelectorAll('.screen').forEach(function(s){s.classList.remove('active');});
+  const el=$(id);if(el) el.classList.add('active');
 }
-function safeSet(id, prop, val){ const el = $(id); if(el) el[prop] = val; }
-function safeSetStyle(id, prop, val){ const el = $(id); if(el) el.style[prop] = val; }
+function safeSet(id,prop,val){ const el=$(id);if(el) el[prop]=val; }
 
-// ═══ IMAGEN con fallback graceful ═══
+// ═══ IMAGEN ═══
 function loadEdgarImage(){
-  const img = new Image();
-  img.onload = function(){
-    applyImage(EDGAR_IMG);
-  };
-  img.onerror = function(){
-    // Sin imagen - usar emoji placeholder, no error
-    setEmojiPlaceholders();
-  };
-  img.src = EDGAR_IMG;
+  const img=new Image();
+  img.onload=function(){ applyImage(EDGAR_IMG); };
+  img.onerror=function(){};
+  img.src=EDGAR_IMG;
 }
-
 function applyImage(src){
-  const mascot = $('mascotWrap');
-  if(mascot){ mascot.innerHTML = '<img src="'+src+'" alt="EdgarAI" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" onerror="this.parentElement.textContent=\'🎭\'">'; }
-  const brand = $('brandWrap');
-  if(brand){ brand.innerHTML = '<img src="'+src+'" alt="EdgarAI" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" onerror="this.parentElement.textContent=\'🎭\'">'; }
-  const navBrand = $('navBrandWrap');
-  if(navBrand){ navBrand.innerHTML = '<img src="'+src+'" alt="EdgarAI" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" onerror="this.parentElement.textContent=\'🎭\'">'; }
-  const authBg = $('authBg');
-  if(authBg){ authBg.style.backgroundImage = 'url("'+src+'")'; }
-  const navAv = $('navUserAv');
-  if(navAv){ navAv.innerHTML = '<img src="'+src+'" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.textContent=\'🎭\'">'; }
-}
-
-function setEmojiPlaceholders(){
-  // Ya tienen emojis por defecto en el HTML, no hace nada
+  const mascot=$('mascotWrap');
+  if(mascot) mascot.innerHTML='<img src="'+src+'" alt="EdgarAI" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" onerror="this.parentElement.textContent=\'🎭\'">';
+  const brand=$('brandWrap');
+  if(brand) brand.innerHTML='<img src="'+src+'" alt="EdgarAI" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.textContent=\'🎭\'">';
+  const navBrand=$('navBrandWrap');
+  if(navBrand) navBrand.innerHTML='<img src="'+src+'" alt="EdgarAI" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.textContent=\'🎭\'">';
+  const authBg=$('authBg');
+  if(authBg) authBg.style.backgroundImage='url("'+src+'")';
+  const navAv=$('navUserAv');
+  if(navAv) navAv.innerHTML='<img src="'+src+'" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.textContent=\'🎭\'">';
 }
 
 // ═══ AUTH TABS ═══
 function switchTab(tab){
-  ['Login','Register','Forgot'].forEach(function(x){
-    const el = $('form'+x); if(el) el.classList.remove('active');
-  });
-  ['tabLogin','tabRegister'].forEach(function(id,i){
-    const el = $(id); if(el) el.classList.toggle('active',(i===0&&tab==='login')||(i===1&&tab==='register'));
-  });
-  const f = $('form'+tab.charAt(0).toUpperCase()+tab.slice(1));
+  ['Login','Register','Forgot'].forEach(function(x){ const el=$('form'+x);if(el) el.classList.remove('active'); });
+  ['tabLogin','tabRegister'].forEach(function(id,i){ const el=$(id);if(el) el.classList.toggle('active',(i===0&&tab==='login')||(i===1&&tab==='register')); });
+  const f=$('form'+tab.charAt(0).toUpperCase()+tab.slice(1));
   if(f) f.classList.add('active');
   hideMsg('authMsg');
 }
@@ -850,31 +795,43 @@ document.addEventListener('DOMContentLoaded', function(){
   $('btnLogin').addEventListener('click', doLogin);
   $('btnRegister').addEventListener('click', doRegister);
   $('btnForgot').addEventListener('click', doForgot);
-  $('btnGuest').addEventListener('click', function(){ enterAsGuest(); });
-
+  $('btnGuest').addEventListener('click', enterAsGuest);
   $('btnCloseModal').addEventListener('click', closeModal);
   $('btnModalClose').addEventListener('click', closeModal);
   $('btnLoadCustomM3U').addEventListener('click', importM3UCustom);
   $('btnPasteM3U').addEventListener('click', pasteM3U);
   $('btnClearM3U').addEventListener('click', clearM3U);
   $('btnLogout').addEventListener('click', doLogout);
-  $('ddProfile').addEventListener('click', function(){ toast('Perfil — inicia sesión para acceder','inf'); $('userDD').classList.remove('open'); });
-
-  $('heroPlayBtn').addEventListener('click', function(){
-    if(heroItem) openModal(heroItem);
-  });
-  $('heroInfoBtn').addEventListener('click', function(){
-    if(heroItem) openModal(heroItem);
-  });
-
+  $('ddProfile').addEventListener('click', function(){ toast('Inicia sesión para ver tu perfil','inf'); $('userDD').classList.remove('open'); });
+  $('heroPlayBtn').addEventListener('click', function(){ if(heroItem) openModal(heroItem); });
+  $('heroInfoBtn').addEventListener('click', function(){ if(heroItem) openModal(heroItem); });
   $('userBtn').addEventListener('click', function(){ $('userDD').classList.toggle('open'); });
   $('brandBtn').addEventListener('click', function(){ showPage('inicio'); });
 
+  // Subtítulos — actualiza idioma y recarga fuente
+  $('subtitleLang').addEventListener('change', function(){
+    currentSubLang = this.value === 'off' ? 'es' : this.value;
+    if(this.value === 'off'){
+      toast('Subtítulos desactivados','inf');
+    } else {
+      toast('Subtítulos: '+this.options[this.selectedIndex].text,'inf');
+    }
+    if(currentModalId){
+      playFromSource(getActiveSourceIdx());
+    }
+  });
+
   // Hamburger
-  function openMobileMenu(){$('mobileMenu').classList.add('open');$('mobileOverlay').classList.add('open');$('hamburger').classList.add('open');document.body.style.overflow='hidden';}
-  function closeMobileMenu(){$('mobileMenu').classList.remove('open');$('mobileOverlay').classList.remove('open');$('hamburger').classList.remove('open');document.body.style.overflow='';}
+  function openMobileMenu(){ $('mobileMenu').classList.add('open');$('mobileOverlay').classList.add('open');$('hamburger').classList.add('open');document.body.style.overflow='hidden'; }
+  function closeMobileMenu(){ $('mobileMenu').classList.remove('open');$('mobileOverlay').classList.remove('open');$('hamburger').classList.remove('open');document.body.style.overflow=''; }
   $('hamburger').addEventListener('click', function(){ $('mobileMenu').classList.contains('open')?closeMobileMenu():openMobileMenu(); });
   $('mobileOverlay').addEventListener('click', closeMobileMenu);
+
+  // ✅ FIX: Nav links desktop
+  document.querySelectorAll('.nav-links a[data-page]').forEach(function(a){
+    a.addEventListener('click', function(){ showPage(this.dataset.page); });
+  });
+
   document.querySelectorAll('.mobile-nav-links a[data-page]').forEach(function(a){
     a.addEventListener('click', function(){ showPage(this.dataset.page); closeMobileMenu(); });
   });
@@ -889,56 +846,47 @@ document.addEventListener('DOMContentLoaded', function(){
     el.addEventListener('click', function(){ showPage(this.dataset.page); $('userDD').classList.remove('open'); });
   });
 
-  // Tab listeners películas
+  // Tabs películas
   document.querySelectorAll('#movieTabs .tab').forEach(function(btn){
     btn.addEventListener('click', function(){
       document.querySelectorAll('#movieTabs .tab').forEach(function(t){t.classList.remove('active');});
-      this.classList.add('active');
-      loadMovies(parseInt(this.dataset.genre)||0,true);
+      this.classList.add('active'); loadMovies(parseInt(this.dataset.genre)||0,true);
     });
   });
   document.querySelectorAll('#seriesTabs .tab').forEach(function(btn){
     btn.addEventListener('click', function(){
       document.querySelectorAll('#seriesTabs .tab').forEach(function(t){t.classList.remove('active');});
-      this.classList.add('active');
-      loadSeries(parseInt(this.dataset.genre)||0,true);
+      this.classList.add('active'); loadSeries(parseInt(this.dataset.genre)||0,true);
     });
   });
   document.querySelectorAll('#animeTabs .tab').forEach(function(btn){
     btn.addEventListener('click', function(){
       document.querySelectorAll('#animeTabs .tab').forEach(function(t){t.classList.remove('active');});
-      this.classList.add('active');
-      loadAnime(this.dataset.lang,true);
+      this.classList.add('active'); loadAnime(this.dataset.lang,true);
     });
   });
   document.querySelectorAll('#caricaturasTabs .tab').forEach(function(btn){
     btn.addEventListener('click', function(){
       document.querySelectorAll('#caricaturasTabs .tab').forEach(function(t){t.classList.remove('active');});
-      this.classList.add('active');
-      loadCaricaturas(this.dataset.lang,true);
+      this.classList.add('active'); loadCaricaturas(this.dataset.lang,true);
     });
   });
   document.querySelectorAll('#telenovelaTabs .tab').forEach(function(btn){
     btn.addEventListener('click', function(){
       document.querySelectorAll('#telenovelaTabs .tab').forEach(function(t){t.classList.remove('active');});
-      this.classList.add('active');
-      loadTelenovelas(this.dataset.country,true);
+      this.classList.add('active'); loadTelenovelas(this.dataset.country,true);
     });
   });
   document.querySelectorAll('#m3uTabs .tab').forEach(function(btn){
     btn.addEventListener('click', function(){
       document.querySelectorAll('#m3uTabs .tab').forEach(function(t){t.classList.remove('active');});
-      this.classList.add('active');
-      m3uRegion=this.dataset.region;
-      renderM3UGrid();
+      this.classList.add('active'); m3uRegion=this.dataset.region; renderM3UGrid();
     });
   });
   document.querySelectorAll('#radioTabs .tab').forEach(function(btn){
     btn.addEventListener('click', function(){
       document.querySelectorAll('#radioTabs .tab').forEach(function(t){t.classList.remove('active');});
-      this.classList.add('active');
-      radioGenre=this.dataset.genre;
-      renderRadio();
+      this.classList.add('active'); radioGenre=this.dataset.genre; renderRadio();
     });
   });
 
@@ -946,35 +894,18 @@ document.addEventListener('DOMContentLoaded', function(){
   document.addEventListener('click', function(e){ if($('userMenu')&&!$('userMenu').contains(e.target)) $('userDD').classList.remove('open'); });
   document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
 
-  // Subtítulos
-  $('subtitleLang').addEventListener('change', function(){
-    const val = this.value;
-    if(val === 'off'){ toast('Subtítulos desactivados','inf'); return; }
-    toast('Subtítulos: '+this.options[this.selectedIndex].text+' (si el reproductor los soporta)','inf');
-    // Recargar fuente con sub lang si es posible
-    if(currentModalId){
-      const idx = getActiveSourceIdx();
-      playFromSource(idx);
-    }
-  });
-
   // Auth check
   (async function(){
-    if(!sb) { enterAsGuest(); return; }
+    if(!sb){ enterAsGuest(); return; }
     try{
       const {data:{session}} = await sb.auth.getSession();
-      if(session && session.user){ currentUser = session.user; safeSet('navName','textContent',session.user.email.split('@')[0]); enterApp(); }
-    }catch(e){ /* silencioso */ }
+      if(session&&session.user){ currentUser=session.user; safeSet('navName','textContent',session.user.email.split('@')[0]); enterApp(); }
+    }catch(e){}
   })();
 });
 
-// ═══ GUEST MODE ═══
-function enterAsGuest(){
-  currentUser = null;
-  safeSet('navName','textContent','Invitado');
-  enterApp();
-}
-
+// ═══ GUEST ═══
+function enterAsGuest(){ currentUser=null; safeSet('navName','textContent','Invitado'); enterApp(); }
 function enterApp(){
   setScreen('appScreen');
   initSearch();
@@ -987,52 +918,46 @@ function enterApp(){
 
 // ═══ AUTH ═══
 async function doLogin(){
-  if(!sb){ toast('Supabase no configurado. Usa acceso sin cuenta.','err'); return; }
+  if(!sb){ toast('Usa acceso sin cuenta','err'); return; }
   const email=$('loginEmail').value.trim(), pass=$('loginPass').value;
-  if(!email||!pass){showMsg('authMsg','Completa todos los campos');return;}
-  const btn=$('btnLogin');
-  btn.disabled=true;btn.textContent='Cargando...';
+  if(!email||!pass){ showMsg('authMsg','Completa todos los campos'); return; }
+  const btn=$('btnLogin'); btn.disabled=true; btn.textContent='Cargando...';
   try{
     const {data,error}=await sb.auth.signInWithPassword({email,password:pass});
-    btn.disabled=false;btn.innerHTML='▶ ENTRAR';
-    if(error){showMsg('authMsg',error.message==='Invalid login credentials'?'Correo o contraseña incorrectos':error.message);return;}
-    hideMsg('authMsg');
-    currentUser=data.user;
+    btn.disabled=false; btn.innerHTML='▶ ENTRAR';
+    if(error){ showMsg('authMsg',error.message==='Invalid login credentials'?'Correo o contraseña incorrectos':error.message); return; }
+    hideMsg('authMsg'); currentUser=data.user;
     safeSet('navName','textContent',data.user.email.split('@')[0]);
     enterApp();
-  }catch(e){btn.disabled=false;btn.innerHTML='▶ ENTRAR';showMsg('authMsg','Error de conexión');}
+  }catch(e){ btn.disabled=false; btn.innerHTML='▶ ENTRAR'; showMsg('authMsg','Error de conexión'); }
 }
 async function doRegister(){
-  if(!sb){toast('Supabase no configurado.','err');return;}
+  if(!sb){ toast('Supabase no configurado','err'); return; }
   const email=$('regEmail').value.trim(),pass=$('regPass').value,pass2=$('regPass2').value;
-  if(!email||!pass||!pass2){showMsg('authMsg','Completa todos los campos');return;}
-  if(pass!==pass2){showMsg('authMsg','Las contraseñas no coinciden');return;}
-  if(pass.length<6){showMsg('authMsg','Mínimo 6 caracteres');return;}
-  const btn=$('btnRegister');
-  btn.disabled=true;btn.textContent='Creando...';
+  if(!email||!pass||!pass2){ showMsg('authMsg','Completa todos los campos'); return; }
+  if(pass!==pass2){ showMsg('authMsg','Las contraseñas no coinciden'); return; }
+  if(pass.length<6){ showMsg('authMsg','Mínimo 6 caracteres'); return; }
+  const btn=$('btnRegister'); btn.disabled=true; btn.textContent='Creando...';
   try{
     const {data,error}=await sb.auth.signUp({email,password:pass});
-    btn.disabled=false;btn.innerHTML='✦ CREAR CUENTA';
-    if(error){showMsg('authMsg',error.message);return;}
+    btn.disabled=false; btn.innerHTML='✦ CREAR CUENTA';
+    if(error){ showMsg('authMsg',error.message); return; }
     showMsg('authMsg','✅ Cuenta creada. Revisa tu correo.','success');
-  }catch(e){btn.disabled=false;btn.innerHTML='✦ CREAR CUENTA';showMsg('authMsg','Error de conexión');}
+  }catch(e){ btn.disabled=false; btn.innerHTML='✦ CREAR CUENTA'; showMsg('authMsg','Error de conexión'); }
 }
 async function doForgot(){
-  if(!sb){toast('Supabase no configurado.','err');return;}
+  if(!sb){ toast('Supabase no configurado','err'); return; }
   const email=$('forgotEmail').value.trim();
-  if(!email){showMsg('authMsg','Ingresa tu correo');return;}
+  if(!email){ showMsg('authMsg','Ingresa tu correo'); return; }
   try{
     const {error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:window.location.href});
-    if(error){showMsg('authMsg',error.message);return;}
+    if(error){ showMsg('authMsg',error.message); return; }
     showMsg('authMsg','✅ Enlace enviado. Revisa tu correo.','success');
-  }catch(e){showMsg('authMsg','Error de conexión');}
+  }catch(e){ showMsg('authMsg','Error de conexión'); }
 }
 async function doLogout(){
-  if(sb && currentUser) try{ await sb.auth.signOut(); }catch(e){}
-  currentUser=null;
-  setScreen('authScreen');
-  switchTab('login');
-  toast('Sesión cerrada','inf');
+  if(sb&&currentUser) try{ await sb.auth.signOut(); }catch(e){}
+  currentUser=null; setScreen('authScreen'); switchTab('login'); toast('Sesión cerrada','inf');
 }
 
 // ═══ TMDB ═══
@@ -1042,7 +967,7 @@ async function tmdb(path,params){
     const r=await fetch(TMDB_BASE+path+'?api_key='+TMDB_KEY+'&language=es-MX'+params);
     if(!r.ok) return null;
     return await r.json();
-  }catch(e){return null;}
+  }catch(e){ return null; }
 }
 
 function movieCardHTML(m){
@@ -1089,10 +1014,7 @@ async function loadHomeContent(){
       $('heroDesc').textContent=(item.overview||'').slice(0,200)+(item.overview&&item.overview.length>200?'...':'');
     }
   }
-  if(sv&&sv.results){
-    $('homeSeries').innerHTML=sv.results.slice(0,8).map(seriesCardHTML).join('');
-    bindCards($('homeSeries'));
-  }
+  if(sv&&sv.results){ $('homeSeries').innerHTML=sv.results.slice(0,8).map(seriesCardHTML).join(''); bindCards($('homeSeries')); }
 }
 
 async function loadMovies(gid,reset){
@@ -1160,9 +1082,7 @@ async function loadTelenovelas(country,reset){
   if(reset){pages_state.telenovelas.page=1;pages_state.telenovelas.country=country;$('allTelenovelas').innerHTML='<div class="loading-wrap"><div class="spinner"></div><span>Cargando...</span></div>';}
   const pg=pages_state.telenovelas.page;
   let d=await tmdb('/discover/tv','&with_genres=10766&with_origin_country='+country+'&page='+pg);
-  if(!d||!d.results||!d.results.length){
-    d=await tmdb('/discover/tv','&with_genres=18&with_origin_country='+country+'&page='+pg+'&sort_by=popularity.desc');
-  }
+  if(!d||!d.results||!d.results.length) d=await tmdb('/discover/tv','&with_genres=18&with_origin_country='+country+'&page='+pg+'&sort_by=popularity.desc');
   if(!d||!d.results){$('allTelenovelas').innerHTML='<p style="color:var(--muted2);padding:2rem">Sin resultados</p>';return;}
   if(reset||pg===1){$('allTelenovelas').innerHTML=d.results.map(seriesCardHTML).join('');}
   else{$('allTelenovelas').insertAdjacentHTML('beforeend',d.results.map(seriesCardHTML).join(''));}
@@ -1190,7 +1110,7 @@ async function doSearch(q){
   const res=$('searchResults');
   res.style.display='block';
   res.innerHTML='<div style="padding:1rem;text-align:center;"><div class="spinner" style="margin:0 auto;"></div></div>';
-  const [mv,tv]=await Promise.all([tmdb('/search/movie','&query='+encodeURIComponent(q)+'&page=1'),tmdb('/search/tv','&query='+encodeURIComponent(q)+'&page=1')]);
+  const [mv,tv]=await Promise.all([tmdb('/search/movie','&query='+encodeURIComponent(q)),tmdb('/search/tv','&query='+encodeURIComponent(q))]);
   const movies=(mv&&mv.results?mv.results.slice(0,5):[]);
   const series=(tv&&tv.results?tv.results.slice(0,5):[]);
   if(!movies.length&&!series.length){res.innerHTML='<div style="padding:1.25rem;color:var(--muted2);font-family:Share Tech Mono,monospace;font-size:.8rem;text-align:center;">Sin resultados para "'+q+'"</div>';return;}
@@ -1199,16 +1119,16 @@ async function doSearch(q){
     html+='<div style="padding:.5rem 1rem .25rem;font-size:.65rem;color:var(--red);font-family:Share Tech Mono,monospace;letter-spacing:1px;border-bottom:1px solid rgba(255,255,255,.05);">🎬 PELÍCULAS</div>';
     html+=movies.map(function(m){
       const data=encodeURIComponent(JSON.stringify({id:m.id,title:m.title,overview:m.overview,vote_average:m.vote_average,release_date:m.release_date,type:'movie'}));
-      const img=m.poster_path?'<img src="https://image.tmdb.org/t/p/w92'+m.poster_path+'" style="width:36px;height:54px;object-fit:cover;border-radius:3px;flex-shrink:0;" onerror="this.style.display=\'none\'">':'<div style="width:36px;height:54px;background:#222;border-radius:3px;flex-shrink:0;display:flex;align-items:center;justify-content:center;">🎬</div>';
-      return '<div class="search-item" data-item="'+data+'" style="display:flex;align-items:center;gap:.75rem;padding:.6rem 1rem;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.03);transition:background .15s;">'+img+'<div><div style="font-size:.88rem;font-weight:700;">'+(m.title||'—')+'</div><div style="font-size:.7rem;color:var(--muted2);">'+(m.release_date||'').slice(0,4)+' · ★'+(m.vote_average||0).toFixed(1)+'</div></div></div>';
+      const img=m.poster_path?'<img src="https://image.tmdb.org/t/p/w92'+m.poster_path+'" style="width:36px;height:54px;object-fit:cover;border-radius:3px;flex-shrink:0;" onerror="this.style.display=\'none\'">':'<div style="width:36px;height:54px;background:#222;border-radius:3px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">🎬</div>';
+      return '<div class="search-item" data-item="'+data+'" style="display:flex;align-items:center;gap:.75rem;padding:.6rem 1rem;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.03);">'+img+'<div><div style="font-size:.88rem;font-weight:700;">'+(m.title||'—')+'</div><div style="font-size:.7rem;color:var(--muted2);">'+(m.release_date||'').slice(0,4)+' · ★'+(m.vote_average||0).toFixed(1)+'</div></div></div>';
     }).join('');
   }
   if(series.length){
     html+='<div style="padding:.5rem 1rem .25rem;font-size:.65rem;color:var(--cyan);font-family:Share Tech Mono,monospace;letter-spacing:1px;border-bottom:1px solid rgba(255,255,255,.05);">📺 SERIES / TV</div>';
     html+=series.map(function(s){
       const data=encodeURIComponent(JSON.stringify({id:s.id,name:s.name,title:s.name,overview:s.overview,vote_average:s.vote_average,first_air_date:s.first_air_date,type:'tv'}));
-      const img=s.poster_path?'<img src="https://image.tmdb.org/t/p/w92'+s.poster_path+'" style="width:36px;height:54px;object-fit:cover;border-radius:3px;flex-shrink:0;" onerror="this.style.display=\'none\'">':'<div style="width:36px;height:54px;background:#222;border-radius:3px;flex-shrink:0;display:flex;align-items:center;justify-content:center;">📺</div>';
-      return '<div class="search-item" data-item="'+data+'" style="display:flex;align-items:center;gap:.75rem;padding:.6rem 1rem;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.03);transition:background .15s;">'+img+'<div><div style="font-size:.88rem;font-weight:700;">'+(s.name||'—')+'</div><div style="font-size:.7rem;color:var(--muted2);">'+(s.first_air_date||'').slice(0,4)+' · ★'+(s.vote_average||0).toFixed(1)+'</div></div></div>';
+      const img=s.poster_path?'<img src="https://image.tmdb.org/t/p/w92'+s.poster_path+'" style="width:36px;height:54px;object-fit:cover;border-radius:3px;flex-shrink:0;" onerror="this.style.display=\'none\'">':'<div style="width:36px;height:54px;background:#222;border-radius:3px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">📺</div>';
+      return '<div class="search-item" data-item="'+data+'" style="display:flex;align-items:center;gap:.75rem;padding:.6rem 1rem;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.03);">'+img+'<div><div style="font-size:.88rem;font-weight:700;">'+(s.name||'—')+'</div><div style="font-size:.7rem;color:var(--muted2);">'+(s.first_air_date||'').slice(0,4)+' · ★'+(s.vote_average||0).toFixed(1)+'</div></div></div>';
     }).join('');
   }
   res.innerHTML=html;
@@ -1245,7 +1165,7 @@ function renderChannels(){
 // ═══ RADIO ═══
 function renderRadio(){
   const list=radioGenre==='all'?RADIO_STATIONS:RADIO_STATIONS.filter(function(r){return r.genre===radioGenre;});
-  const el=$('allRadio'); if(!el) return;
+  const el=$('allRadio');if(!el) return;
   el.innerHTML=list.map(function(r){
     return '<div class="radio-card" data-ch="'+encodeURIComponent(JSON.stringify({name:r.name,url:r.url,group:r.genre,icon:r.icon,prog:r.genre,progress:50}))+'"><div class="radio-icon">'+r.icon+'</div><div class="radio-info"><div class="radio-name">'+r.name+'</div><div class="radio-genre">'+r.genre.toUpperCase()+' · '+r.country+'</div></div><div style="color:var(--red);font-size:.8rem;">▶</div></div>';
   }).join('');
@@ -1255,14 +1175,14 @@ function renderRadio(){
 // ═══ DEPORTES ═══
 function renderDeportesM3U(){
   const list=M3U_LISTS.filter(function(l){return l.region==='deportes';});
-  const el=$('deportesM3UGrid'); if(!el) return;
+  const el=$('deportesM3UGrid');if(!el) return;
   el.innerHTML=list.map(function(l,i){return m3uCardHTML(l,i);}).join('');
   bindM3UCards(el);
   const depCh=[
     {name:'ESPN Demo',prog:'Deportes 24h',icon:'🏈',url:'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8',progress:70},
     {name:'Fox Sports Demo',prog:'Fútbol en vivo',icon:'⚽',url:'https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8',progress:55},
   ];
-  const ad=$('allDeportes'); if(ad){ad.innerHTML=depCh.map(chCardHTML).join('');bindChannels(ad);}
+  const ad=$('allDeportes');if(ad){ad.innerHTML=depCh.map(chCardHTML).join('');bindChannels(ad);}
 }
 
 // ═══ M3U ═══
@@ -1280,7 +1200,7 @@ function bindM3UCards(container){
 }
 function renderM3UGrid(){
   const list=m3uRegion==='all'?M3U_LISTS:M3U_LISTS.filter(function(l){return l.region===m3uRegion;});
-  const el=$('m3uGrid'); if(!el) return;
+  const el=$('m3uGrid');if(!el) return;
   el.innerHTML=list.map(function(l,i){return m3uCardHTML(l,i);}).join('');
   bindM3UCards(el);
 }
@@ -1292,7 +1212,7 @@ async function fetchWithProxy(url){
       if(r.ok){const t=await r.text();if(t.includes('#EXTM3U')||t.includes('#EXTINF')) return t;}
     }catch(e){continue;}
   }
-  throw new Error('No se pudo descargar. Prueba pegar el contenido.');
+  throw new Error('No se pudo descargar.');
 }
 async function importM3U(url,name){
   toast('Cargando '+name+'...','inf');
@@ -1300,8 +1220,7 @@ async function importM3U(url,name){
     const text=await fetchWithProxy(url);
     const channels=parseM3U(text);
     if(!channels.length){toast('Sin canales encontrados','err');return;}
-    loadedM3U=channels;
-    renderLoadedM3U(name,channels);
+    loadedM3U=channels; renderLoadedM3U(name,channels);
     toast('✅ '+channels.length+' canales de '+name,'ok');
     showPage('m3u');
     setTimeout(function(){const el=$('m3uLoaded');if(el) el.scrollIntoView({behavior:'smooth'});},300);
@@ -1317,8 +1236,7 @@ function pasteM3U(){
   if(!text) return;
   const channels=parseM3U(text);
   if(!channels.length){toast('Sin canales','err');return;}
-  loadedM3U=channels;
-  renderLoadedM3U('Pegado',channels);
+  loadedM3U=channels; renderLoadedM3U('Pegado',channels);
   toast('✅ '+channels.length+' canales importados','ok');
 }
 function parseM3U(text){
@@ -1386,7 +1304,6 @@ function destroyPlayer(){
   const pc=$('playerContainer');
   if(pc) pc.innerHTML='<div class="no-vid-ph"><div class="ic">▶</div><p>// PRESIONA REPRODUCIR PARA VER</p></div>';
 }
-
 function initPlayer(src,fallbackEmbed){
   const pc=$('playerContainer');if(!pc) return;
   if(!src&&fallbackEmbed){loadEmbed(fallbackEmbed);return;}
@@ -1397,47 +1314,41 @@ function initPlayer(src,fallbackEmbed){
   const isHLS=src.includes('.m3u8')||src.includes('/hls/')||src.toLowerCase().includes('m3u8');
   if(isHLS&&typeof Hls!=='undefined'&&Hls.isSupported()){
     const hls=new Hls({enableWorker:true,lowLatencyMode:true,backBufferLength:90});
-    hls.loadSource(src);
-    hls.attachMedia(video);
+    hls.loadSource(src);hls.attachMedia(video);
     hls.on(Hls.Events.MANIFEST_PARSED,function(){video.play().catch(function(){});});
     hls.on(Hls.Events.ERROR,function(e,data){
       if(data.fatal){
         if(data.type===Hls.ErrorTypes.NETWORK_ERROR){hls.startLoad();}
         else if(data.type===Hls.ErrorTypes.MEDIA_ERROR){hls.recoverMediaError();}
-        else{hls.destroy();if(fallbackEmbed){setTimeout(function(){loadEmbed(fallbackEmbed);},500);}else{toast('Error al cargar stream','err');}}
+        else{hls.destroy();if(fallbackEmbed) setTimeout(function(){loadEmbed(fallbackEmbed);},500);}
       }
     });
-    if(fallbackEmbed){setTimeout(function(){if(video.readyState===0){hls.destroy();loadEmbed(fallbackEmbed);}},10000);}
+    if(fallbackEmbed) setTimeout(function(){if(video.readyState===0){hls.destroy();loadEmbed(fallbackEmbed);}},10000);
     video._hls=hls;
   } else if(video.canPlayType('application/vnd.apple.mpegurl')&&isHLS){
     video.src=src;
     video.addEventListener('loadedmetadata',function(){video.play().catch(function(){});});
     video.addEventListener('error',function(){if(fallbackEmbed) loadEmbed(fallbackEmbed);});
   } else {
-    video.src=src;
-    video.play().catch(function(){});
+    video.src=src;video.play().catch(function(){});
     video.addEventListener('error',function(){if(fallbackEmbed) loadEmbed(fallbackEmbed);});
   }
 }
-
 function loadEmbed(url){
   currentPlayer=null;
   const pc=$('playerContainer');if(!pc) return;
   pc.innerHTML='<iframe src="'+url+'" style="width:100%;height:100%;min-height:300px;border:none;background:#000;display:block;" allowfullscreen allow="autoplay; encrypted-media; fullscreen; picture-in-picture; web-share" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-presentation"></iframe>';
 }
 
-// ═══ SELECTOR DE FUENTE ═══
+// ═══ FUENTES ═══
 function getActiveSourceIdx(){
   const btns=$('sourceButtons');if(!btns) return 0;
   const active=btns.querySelector('.source-btn.active');
   return active?parseInt(active.dataset.idx)||0:0;
 }
-
 function loadEmbedWithSourceSelector(type,tmdbId,season,episode){
-  currentModalType=type;
-  currentModalId=tmdbId;
-  currentSeason=season||1;
-  currentEpisode=episode||1;
+  currentModalType=type; currentModalId=tmdbId;
+  currentSeason=season||1; currentEpisode=episode||1;
   const switcher=$('sourceSwitcher'),btns=$('sourceButtons');
   if(!switcher||!btns) return;
   switcher.style.display='block';
@@ -1445,21 +1356,21 @@ function loadEmbedWithSourceSelector(type,tmdbId,season,episode){
   btns.querySelectorAll('.source-btn').forEach(function(btn){
     btn.addEventListener('click',function(){
       btns.querySelectorAll('.source-btn').forEach(function(b){b.classList.remove('active');});
-      btn.classList.add('active');
-      playFromSource(parseInt(btn.dataset.idx));
+      btn.classList.add('active'); playFromSource(parseInt(btn.dataset.idx));
     });
   });
-  const subBar=$('subtitleBar');
-  if(subBar) subBar.style.display='flex';
+  const subBar=$('subtitleBar');if(subBar) subBar.style.display='flex';
   playFromSource(0);
 }
-
 function playFromSource(idx){
   const sources=currentModalType==='movie'?EMBED_SOURCES_MOVIE:EMBED_SOURCES_TV;
   if(idx>=sources.length){toast('Sin más fuentes','err');return;}
+  const lang=currentSubLang||'es';
   let url;
   try{
-    url=currentModalType==='movie'?sources[idx](currentModalId):sources[idx](currentModalId,currentSeason,currentEpisode);
+    url=currentModalType==='movie'
+      ?sources[idx](currentModalId,lang)
+      :sources[idx](currentModalId,currentSeason,currentEpisode,lang);
   }catch(e){toast('Error generando URL','err');return;}
   loadEmbed(url);
 }
@@ -1536,14 +1447,13 @@ function openModal(m){
     if(bp){
       bp.style.display='inline-flex';
       bp.onclick=function(){
-        if(m.url){ initPlayer(m.url,m.id?EMBED_SOURCES_MOVIE[0](m.id):null); }
+        if(m.url){ initPlayer(m.url,m.id?EMBED_SOURCES_MOVIE[0](m.id,currentSubLang):null); }
         else if(m.id){ loadEmbedWithSourceSelector('movie',m.id); }
         else{ toast('Sin fuente de reproducción','err'); }
       };
     }
   }
 }
-
 function openChannelModal(c){
   if(!c) return;
   const mTitle=$('mTitle'),mDesc=$('mDesc'),mMeta=$('mMeta');
@@ -1554,15 +1464,11 @@ function openChannelModal(c){
   if(ep) ep.style.display='none';
   if(ss) ss.style.display='none';
   if(sb2) sb2.style.display='none';
-  if(bp){
-    bp.style.display='inline-flex';
-    bp.onclick=function(){if(c.url) initPlayer(c.url,null);else toast('Sin URL','err');};
-  }
+  if(bp){ bp.style.display='inline-flex'; bp.onclick=function(){if(c.url) initPlayer(c.url,null);else toast('Sin URL','err');}; }
   destroyPlayer();
   const modal=$('modal');if(modal) modal.classList.add('open');
   if(c.url) setTimeout(function(){initPlayer(c.url,null);},300);
 }
-
 function closeModal(){
   destroyPlayer();
   const modal=$('modal');if(modal) modal.classList.remove('open');
