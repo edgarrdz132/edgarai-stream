@@ -691,7 +691,7 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
 // ═══ CONFIG ═══
 const EDGAR_IMG = './edgarai.jpg';
 const SUPABASE_URL = 'https://jelxossqzywochqsszsq.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImplbHhvc3Nxenl3b2NocXNzenNxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM5ODc4NDIsImV4cCI6MjA4OTU2Mzg0Mn0.7aPdziXzWjfO6WsMNFnX0k8hOCHZKr1SchhsEwdZ6tM'; // ← Reemplaza con tu anon key real
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.YOUR_REAL_ANON_KEY_HERE'; // ← Reemplaza con tu anon key real
 const TMDB_KEY = '8265bd1679663a7ea12ac168da84d2e8';
 const TMDB_BASE = 'https://api.themoviedb.org/3';
 const IMG_W = 'https://image.tmdb.org/t/p/w500';
@@ -789,10 +789,9 @@ function showMsg(id, text, type){
 }
 function hideMsg(id){ const el = $(id); if(el) el.className = 'msg'; }
 function setScreen(id){
-  // ← AGREGA ESTO
-document.querySelectorAll('.sec-link[data-page]').forEach(function(el){
-    el.addEventListener('click', function(){ showPage(this.dataset.page); });
-});
+  document.querySelectorAll('.screen').forEach(function(s){ s.classList.remove('active'); });
+  const el = $(id); if(el) el.classList.add('active');
+}
 function safeSet(id, prop, val){ const el = $(id); if(el) el[prop] = val; }
 function safeSetStyle(id, prop, val){ const el = $(id); if(el) el.style[prop] = val; }
 
