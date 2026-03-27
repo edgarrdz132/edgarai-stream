@@ -790,10 +790,6 @@ function showMsg(id, text, type){
 function hideMsg(id){ const el = $(id); if(el) el.className = 'msg'; }
 function setScreen(id){
   // ← AGREGA ESTO
-document.querySelectorAll('.nav-links a[data-page]').forEach(function(a){
-    a.addEventListener('click', function(){ showPage(this.dataset.page); });
-});
-
 document.querySelectorAll('.sec-link[data-page]').forEach(function(el){
     el.addEventListener('click', function(){ showPage(this.dataset.page); });
 });
