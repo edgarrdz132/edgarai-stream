@@ -143,7 +143,8 @@ body{background:var(--bg);color:var(--white);font-family:'Barlow Condensed',sans
 .ch-card:hover{transform:translateY(-3px);border-color:rgba(229,9,20,.2);}
 .ch-card:hover::after{transform:scaleX(1);}
 .ch-top{display:flex;justify-content:space-between;margin-bottom:.75rem;}
-.ch-icon{width:44px;height:44px;border-radius:8px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1px solid rgba(255,255,255,.06);}
+.ch-icon{width:44px;height:44px;border-radius:8px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1px solid rgba(255,255,255,.06);overflow:hidden;}
+.ch-icon img{width:100%;height:100%;object-fit:contain;border-radius:6px;}
 .live-pill{display:flex;align-items:center;gap:.28rem;background:rgba(229,9,20,.12);border:1px solid rgba(229,9,20,.3);border-radius:3px;padding:.15rem .42rem;font-size:.6rem;font-weight:700;color:var(--red);font-family:'Share Tech Mono',monospace;}
 .ldot{width:5px;height:5px;border-radius:50%;background:var(--red);animation:ldotAnim 1.2s infinite;}
 @keyframes ldotAnim{0%,100%{opacity:1}50%{opacity:.2}}
@@ -178,7 +179,7 @@ body{background:var(--bg);color:var(--white);font-family:'Barlow Condensed',sans
 .modal-meta2{display:flex;gap:.75rem;font-size:.75rem;color:var(--muted2);flex-wrap:wrap;font-family:'Share Tech Mono',monospace;margin-bottom:.75rem;}
 .modal-desc2{font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:1rem;}
 .modal-acts{display:flex;gap:.55rem;flex-wrap:wrap;}
-.source-switcher{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.75rem;}
+.source-switcher{display:flex;gap:.4rem;flex-wrap:wrap;}
 .source-btn{padding:.3rem .7rem;border-radius:3px;font-size:.72rem;font-weight:700;letter-spacing:.5px;cursor:pointer;color:var(--muted2);border:1px solid rgba(255,255,255,.1);background:transparent;font-family:'Share Tech Mono',monospace;transition:all .2s;}
 .source-btn.active{color:#fff;background:rgba(229,9,20,.3);border-color:var(--red);}
 .source-btn:hover:not(.active){color:var(--white);background:rgba(255,255,255,.06);}
@@ -225,6 +226,8 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
 .mbb-item.active{color:var(--red);}
 .mbb-item .mbb-icon{font-size:1.2rem;}
 .mbb-item .mbb-label{font-size:.5rem;font-family:'Share Tech Mono',monospace;letter-spacing:.5px;text-transform:uppercase;}
+/* Spider channels counter badge */
+.spider-badge{display:inline-flex;align-items:center;gap:.3rem;background:rgba(0,245,255,.08);border:1px solid rgba(0,245,255,.2);border-radius:3px;padding:.15rem .5rem;font-size:.6rem;color:var(--cyan);font-family:'Share Tech Mono',monospace;margin-left:.5rem;}
 @media(max-width:900px){
   .auth-left{display:none;}.auth-right{width:100%;min-width:unset;border-left:none;}
   .navbar{padding:0 1rem;height:54px;}.nav-links{display:none;}.nav-search{display:none;}
@@ -407,7 +410,10 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
     </div>
     <div class="ndiv"></div>
     <div class="section">
-      <div class="sec-hdr"><div class="sec-title">Canales en Vivo</div><div class="sec-link" data-page="canales">VER TODO →</div></div>
+      <div class="sec-hdr">
+        <div class="sec-title">Canales en Vivo <span class="spider-badge" id="homeChBadge" style="display:none">📡 <span id="homeChCount">0</span> canales</span></div>
+        <div class="sec-link" data-page="canales">VER TODO →</div>
+      </div>
       <div class="grid-ch" id="homeChannels"></div>
     </div>
     <div class="ndiv"></div>
@@ -535,12 +541,14 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
     </div>
   </div>
 
-  <!-- CANALES -->
+  <!-- CANALES EN VIVO -->
   <div class="page" id="page-canales">
     <div class="section">
-      <div class="sec-hdr"><div class="sec-title">Canales en Vivo</div></div>
+      <div class="sec-hdr">
+        <div class="sec-title">Canales en Vivo <span class="spider-badge" id="allChBadge" style="display:none">📡 <span id="allChCount">0</span> canales</span></div>
+      </div>
       <div class="notice">📡 Canales en vivo. Carga tu lista M3U para más canales.</div>
-      <div class="grid-ch" id="allChannels"></div>
+      <div id="allChannels"></div>
     </div>
   </div>
 
@@ -631,7 +639,6 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:1.75rem 2.5rem;display
           <option value="de">Alemán</option>
           <option value="off">Sin subtítulos</option>
         </select>
-        <!-- CORRECCIÓN: texto actualizado para indicar que los subs se controlan dentro del player -->
         <span style="font-size:.65rem;color:var(--muted2);font-family:'Share Tech Mono',monospace;">Actívalos con el ícono CC dentro del reproductor</span>
       </div>
       <div id="sourceSwitcher" style="display:none;margin-bottom:.75rem;">
@@ -733,6 +740,9 @@ let currentSubLang = 'es';
 let heroItem = null;
 const pages_state = {movies:{page:1,genre:0},series:{page:1,genre:0},anime:{page:1,lang:'ja'},caricaturas:{page:1,lang:'all'},telenovelas:{page:1,country:'MX'}};
 
+// ═══ SPIDER: Canales cargados desde el JSON ═══
+let SPIDER_CH = [];
+
 // ═══ UTILS ═══
 function $(id){ return document.getElementById(id); }
 function toast(msg, type){
@@ -816,9 +826,7 @@ document.addEventListener('DOMContentLoaded', function(){
     } else {
       toast('Subtítulos: '+this.options[this.selectedIndex].text,'inf');
     }
-    if(currentModalId){
-      playFromSource(getActiveSourceIdx());
-    }
+    if(currentModalId){ playFromSource(getActiveSourceIdx()); }
   });
 
   function openMobileMenu(){ $('mobileMenu').classList.add('open');$('mobileOverlay').classList.add('open');$('hamburger').classList.add('open');document.body.style.overflow='hidden'; }
@@ -905,10 +913,155 @@ function enterApp(){
   setScreen('appScreen');
   initSearch();
   loadHomeContent();
-  renderChannels();
+  loadSpiderChannels(); // carga JSON y llama renderChannels() internamente
   renderM3UGrid();
   renderRadio();
   renderDeportesM3U();
+}
+
+// ═══ SPIDER: Detectores automáticos ═══
+function detectGroup(name){
+  name=(name||'').toLowerCase();
+  if(/espn|fox sports|tudn|tyc|directv sports|bein|win sports|mlb|liga|movistar|dazn/.test(name)) return 'Deportes';
+  if(/cnn|bbc|dw|france 24|al jazeera|telesur|n\+|imagen|excélsior|noticias|nhk|euronews/.test(name)) return 'Noticias';
+  if(/disney|cartoon|nickelodeon|tooncast|baby|discovery kids/.test(name)) return 'Infantil';
+  if(/tlnovelas|telenovela|pasiones|novelas/.test(name)) return 'Telenovelas';
+  if(/tnt|hbo|star|cinemax|cinecanal|golden|multipremier|panico|warner|fx|axn|amc|sony/.test(name)) return 'Entretenimiento';
+  if(/discovery|history|nat geo|animal|id investigation/.test(name)) return 'Documentales';
+  if(/azteca|televisa|canal 5|las estrellas|unicable|imagen|telefe|el trece|caracol|rcn|univision|telemundo/.test(name)) return 'TV Abierta';
+  return 'General';
+}
+function detectIcon(name){
+  name=(name||'').toLowerCase();
+  if(/espn|fox sports|tudn|tyc|directv|bein|win sports|mlb|liga|movistar|dazn/.test(name)) return '⚽';
+  if(/cnn|bbc|dw|france|al jazeera|noticias|nhk|euronews/.test(name)) return '📰';
+  if(/disney|cartoon|nickelodeon|baby|tooncast/.test(name)) return '🎨';
+  if(/nasa/.test(name)) return '🚀';
+  if(/méxico|azteca|televisa|canal 5/.test(name)) return '🇲🇽';
+  if(/argentina|telefe|trece/.test(name)) return '🇦🇷';
+  if(/colombia|caracol|rcn/.test(name)) return '🇨🇴';
+  if(/france|24 fr/.test(name)) return '🇫🇷';
+  if(/japan|nhk/.test(name)) return '🇯🇵';
+  if(/sport|deport/.test(name)) return '🏆';
+  return '📺';
+}
+
+// ═══ SPIDER: Carga el JSON generado por el spider ═══
+async function loadSpiderChannels(){
+  try{
+    const res = await fetch('./canales_edgarai.json');
+    if(!res.ok) throw new Error('JSON no encontrado');
+    const data = await res.json();
+    SPIDER_CH = data
+      .filter(function(c){ return c.players && c.players.length > 0; })
+      .map(function(c){
+        return {
+          name: c.name,
+          prog: detectGroup(c.name),
+          group: detectGroup(c.name),
+          icon: c.logo ? '' : detectIcon(c.name),
+          logo: c.logo || '',
+          players: c.players,
+          progress: Math.floor(Math.random()*60)+30
+        };
+      });
+    console.log('✅ Spider: '+SPIDER_CH.length+' canales cargados desde JSON');
+    toast('📡 '+SPIDER_CH.length+' canales cargados','ok');
+  }catch(e){
+    console.warn('Spider JSON no disponible, usando canales demo');
+  }
+  renderChannels();
+}
+
+// ═══ CANALES ═══
+function chCardHTML(c){
+  const iconHTML = c.logo
+    ? '<div class="ch-icon"><img src="'+c.logo+'" alt="'+c.name+'" onerror="this.parentElement.textContent=\''+detectIcon(c.name)+'\'"></div>'
+    : '<div class="ch-icon">'+(c.icon||'📺')+'</div>';
+  return '<div class="ch-card" data-ch="'+encodeURIComponent(JSON.stringify(c))+'">'
+    +'<div class="ch-top">'+iconHTML+'<div class="live-pill"><div class="ldot"></div>EN VIVO</div></div>'
+    +'<div class="ch-name">'+c.name+'</div><div class="ch-prog">📺 '+(c.prog||c.group||'Canal')+'</div>'
+    +'<div class="ch-prog-bar"><div class="ch-prog-fill" style="width:'+(c.progress||50)+'%"></div></div></div>';
+}
+function bindChannels(container){
+  container.querySelectorAll('.ch-card[data-ch]').forEach(function(card){
+    card.addEventListener('click',function(){
+      try{openChannelModal(JSON.parse(decodeURIComponent(card.dataset.ch)));}catch(e){}
+    });
+  });
+}
+
+function renderChannels(){
+  const allCh = DEMO_CH.concat(SPIDER_CH);
+  const hc=$('homeChannels'), ac=$('allChannels');
+
+  // Actualizar badges con conteo
+  const total = allCh.length;
+  const homeB=$('homeChBadge'), homeC=$('homeChCount');
+  const allB=$('allChBadge'), allC=$('allChCount');
+  if(homeB&&total>0){homeB.style.display='inline-flex';if(homeC) homeC.textContent=total;}
+  if(allB&&total>0){allB.style.display='inline-flex';if(allC) allC.textContent=total;}
+
+  // Home: mostrar los primeros 8
+  if(hc){
+    hc.innerHTML=allCh.slice(0,8).map(chCardHTML).join('');
+    bindChannels(hc);
+  }
+
+  // Página canales: con tabs de grupo si hay canales spider
+  if(ac){
+    if(SPIDER_CH.length>0){
+      const groups=[...new Set(allCh.map(function(c){return c.group||'General';}))];
+      const tabsHTML='<div class="tabs" id="chGroupTabs" style="margin-bottom:1rem;">'
+        +'<button class="tab active" data-grp="">Todos ('+allCh.length+')</button>'
+        +groups.map(function(g){
+          const count=allCh.filter(function(c){return (c.group||'General')===g;}).length;
+          return '<button class="tab" data-grp="'+g+'">'+g+' ('+count+')</button>';
+        }).join('')
+        +'</div>';
+
+      ac.innerHTML=tabsHTML+'<div class="grid-ch" id="chGrid">'+allCh.map(chCardHTML).join('')+'</div>';
+
+      ac.querySelectorAll('#chGroupTabs .tab').forEach(function(btn){
+        btn.addEventListener('click',function(){
+          ac.querySelectorAll('#chGroupTabs .tab').forEach(function(t){t.classList.remove('active');});
+          btn.classList.add('active');
+          const grp=btn.dataset.grp;
+          const filtered=grp?allCh.filter(function(c){return (c.group||'General')===grp;}):allCh;
+          const grid=$('chGrid');
+          if(grid){grid.innerHTML=filtered.map(chCardHTML).join('');bindChannels(grid);}
+        });
+      });
+      const grid=ac.querySelector('#chGrid');
+      if(grid) bindChannels(grid);
+    } else {
+      ac.innerHTML='<div class="grid-ch">'+allCh.map(chCardHTML).join('')+'</div>';
+      bindChannels(ac);
+    }
+  }
+}
+
+// ═══ RADIO ═══
+function renderRadio(){
+  const list=radioGenre==='all'?RADIO_STATIONS:RADIO_STATIONS.filter(function(r){return r.genre===radioGenre;});
+  const el=$('allRadio');if(!el) return;
+  el.innerHTML=list.map(function(r){
+    return '<div class="radio-card" data-ch="'+encodeURIComponent(JSON.stringify({name:r.name,url:r.url,group:r.genre,icon:r.icon,prog:r.genre,progress:50}))+'"><div class="radio-icon">'+r.icon+'</div><div class="radio-info"><div class="radio-name">'+r.name+'</div><div class="radio-genre">'+r.genre.toUpperCase()+' · '+r.country+'</div></div><div style="color:var(--red);font-size:.8rem;">▶</div></div>';
+  }).join('');
+  bindChannels(el);
+}
+
+// ═══ DEPORTES ═══
+function renderDeportesM3U(){
+  const list=M3U_LISTS.filter(function(l){return l.region==='deportes';});
+  const el=$('deportesM3UGrid');if(!el) return;
+  el.innerHTML=list.map(function(l,i){return m3uCardHTML(l,i);}).join('');
+  bindM3UCards(el);
+  const depCh=[
+    {name:'ESPN Demo',prog:'Deportes 24h',icon:'🏈',url:'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8',progress:70},
+    {name:'Fox Sports Demo',prog:'Fútbol en vivo',icon:'⚽',url:'https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8',progress:55},
+  ];
+  const ad=$('allDeportes');if(ad){ad.innerHTML=depCh.map(chCardHTML).join('');bindChannels(ad);}
 }
 
 // ═══ AUTH ═══
@@ -1137,49 +1290,6 @@ async function doSearch(q){
   });
 }
 
-// ═══ CANALES ═══
-function chCardHTML(c){
-  return '<div class="ch-card" data-ch="'+encodeURIComponent(JSON.stringify(c))+'">'
-    +'<div class="ch-top"><div class="ch-icon">'+(c.icon||'📺')+'</div><div class="live-pill"><div class="ldot"></div>EN VIVO</div></div>'
-    +'<div class="ch-name">'+c.name+'</div><div class="ch-prog">📺 '+(c.prog||c.group||'Canal')+'</div>'
-    +'<div class="ch-prog-bar"><div class="ch-prog-fill" style="width:'+(c.progress||50)+'%"></div></div></div>';
-}
-function bindChannels(container){
-  container.querySelectorAll('.ch-card[data-ch]').forEach(function(card){
-    card.addEventListener('click',function(){
-      try{openChannelModal(JSON.parse(decodeURIComponent(card.dataset.ch)));}catch(e){}
-    });
-  });
-}
-function renderChannels(){
-  const hc=$('homeChannels'),ac=$('allChannels');
-  if(hc){hc.innerHTML=DEMO_CH.slice(0,4).map(chCardHTML).join('');bindChannels(hc);}
-  if(ac){ac.innerHTML=DEMO_CH.map(chCardHTML).join('');bindChannels(ac);}
-}
-
-// ═══ RADIO ═══
-function renderRadio(){
-  const list=radioGenre==='all'?RADIO_STATIONS:RADIO_STATIONS.filter(function(r){return r.genre===radioGenre;});
-  const el=$('allRadio');if(!el) return;
-  el.innerHTML=list.map(function(r){
-    return '<div class="radio-card" data-ch="'+encodeURIComponent(JSON.stringify({name:r.name,url:r.url,group:r.genre,icon:r.icon,prog:r.genre,progress:50}))+'"><div class="radio-icon">'+r.icon+'</div><div class="radio-info"><div class="radio-name">'+r.name+'</div><div class="radio-genre">'+r.genre.toUpperCase()+' · '+r.country+'</div></div><div style="color:var(--red);font-size:.8rem;">▶</div></div>';
-  }).join('');
-  bindChannels(el);
-}
-
-// ═══ DEPORTES ═══
-function renderDeportesM3U(){
-  const list=M3U_LISTS.filter(function(l){return l.region==='deportes';});
-  const el=$('deportesM3UGrid');if(!el) return;
-  el.innerHTML=list.map(function(l,i){return m3uCardHTML(l,i);}).join('');
-  bindM3UCards(el);
-  const depCh=[
-    {name:'ESPN Demo',prog:'Deportes 24h',icon:'🏈',url:'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8',progress:70},
-    {name:'Fox Sports Demo',prog:'Fútbol en vivo',icon:'⚽',url:'https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8',progress:55},
-  ];
-  const ad=$('allDeportes');if(ad){ad.innerHTML=depCh.map(chCardHTML).join('');bindChannels(ad);}
-}
-
 // ═══ M3U ═══
 function m3uCardHTML(l,i){
   return '<div class="m3u-card" style="animation-delay:'+(i*.04)+'s" data-url="'+l.url+'" data-name="'+l.name+'">'
@@ -1329,8 +1439,6 @@ function initPlayer(src,fallbackEmbed){
     video.addEventListener('error',function(){if(fallbackEmbed) loadEmbed(fallbackEmbed);});
   }
 }
-
-// ═══ CORRECCIÓN PRINCIPAL: se eliminó el atributo sandbox del iframe ═══
 function loadEmbed(url){
   currentPlayer=null;
   const pc=$('playerContainer');if(!pc) return;
@@ -1426,7 +1534,6 @@ function openModal(m){
   if(ss) ss.style.display='none';
   if(sb2) sb2.style.display='none';
   const modal=$('modal');if(modal) modal.classList.add('open');
-
   if(isSeries&&m.id){
     const ep=$('episodeSelector'),bp=$('btnModalPlay');
     if(ep) ep.style.display='block';
@@ -1451,6 +1558,7 @@ function openModal(m){
     }
   }
 }
+
 function openChannelModal(c){
   if(!c) return;
   const mTitle=$('mTitle'),mDesc=$('mDesc'),mMeta=$('mMeta');
@@ -1459,13 +1567,47 @@ function openChannelModal(c){
   if(mMeta) mMeta.innerHTML='<span style="color:var(--red)">● EN VIVO</span><span>'+(c.group||'General')+'</span>';
   const ep=$('episodeSelector'),ss=$('sourceSwitcher'),sb2=$('subtitleBar'),bp=$('btnModalPlay');
   if(ep) ep.style.display='none';
-  if(ss) ss.style.display='none';
   if(sb2) sb2.style.display='none';
-  if(bp){ bp.style.display='inline-flex'; bp.onclick=function(){if(c.url) initPlayer(c.url,null);else toast('Sin URL','err');}; }
   destroyPlayer();
   const modal=$('modal');if(modal) modal.classList.add('open');
-  if(c.url) setTimeout(function(){initPlayer(c.url,null);},300);
+
+  // ═══ CANALES SPIDER: múltiples opciones de player ═══
+  if(c.players && c.players.length > 0){
+    // Mostrar selector de fuentes con las opciones del spider
+    if(ss) ss.style.display='block';
+    const btns=$('sourceButtons');
+    if(btns){
+      btns.innerHTML=c.players.map(function(url,i){
+        return '<button class="source-btn'+(i===0?' active':'')+'" data-idx="'+i+'">Opción '+(i+1)+'</button>';
+      }).join('');
+      btns.querySelectorAll('.source-btn').forEach(function(btn){
+        btn.addEventListener('click',function(){
+          btns.querySelectorAll('.source-btn').forEach(function(b){b.classList.remove('active');});
+          btn.classList.add('active');
+          loadEmbed(c.players[parseInt(btn.dataset.idx)]);
+        });
+      });
+    }
+    if(bp){
+      bp.style.display='inline-flex';
+      bp.onclick=function(){ loadEmbed(c.players[0]); };
+    }
+    // Autoplay con la opción 1
+    setTimeout(function(){ loadEmbed(c.players[0]); }, 300);
+  } else if(c.url){
+    // Canal demo con URL directa HLS
+    if(ss) ss.style.display='none';
+    if(bp){
+      bp.style.display='inline-flex';
+      bp.onclick=function(){ initPlayer(c.url,null); };
+    }
+    setTimeout(function(){ initPlayer(c.url,null); }, 300);
+  } else {
+    if(ss) ss.style.display='none';
+    if(bp){ bp.style.display='inline-flex'; bp.onclick=function(){ toast('Sin URL de reproducción','err'); }; }
+  }
 }
+
 function closeModal(){
   destroyPlayer();
   const modal=$('modal');if(modal) modal.classList.remove('open');
