@@ -1,0 +1,1298 @@
+[
+  {
+    "name": "Solo Eventos",
+    "logo": "https://www.tvporinternet2.com/imge/soloeventos.webp",
+    "page": "https://www.tvporinternet2.com/solo-eventos-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/soloeventos.php",
+      "https://www.tvporinternet2.com/live2/soloeventos.php"
+    ]
+  },
+  {
+    "name": "Azteca Deportes",
+    "logo": "https://www.tvporinternet2.com/imge/aztecadeportes.png",
+    "page": "https://www.tvporinternet2.com/azteca-deportes-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/aztecadeportes.php",
+      "https://www.tvporinternet2.com/live2/aztecadeportes.php",
+      "https://www.tvporinternet2.com/live3/aztecadeportes.php",
+      "https://www.tvporinternet2.com/live4/aztecadeportes.php",
+      "https://www.tvporinternet2.com/live5/aztecadeportes.php",
+      "https://www.tvporinternet2.com/live6/aztecadeportes.php"
+    ]
+  },
+  {
+    "name": "FM Hot Movies",
+    "logo": "https://www.tvporinternet2.com/imge/fmhotmovies.png",
+    "page": "https://www.tvporinternet2.com/fm-hot-movies-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/fmhotmovies.php",
+      "https://www.tvporinternet2.com/live2/fmhotmovies.php",
+      "https://www.tvporinternet2.com/live3/fmhotmovies.php",
+      "https://www.tvporinternet2.com/live4/fmhotmovies.php",
+      "https://www.tvporinternet2.com/live5/fmhotmovies.php",
+      "https://www.tvporinternet2.com/live6/fmhotmovies.php"
+    ]
+  },
+  {
+    "name": "FM Hot Kids",
+    "logo": "https://www.tvporinternet2.com/imge/fmhotkids.png",
+    "page": "https://www.tvporinternet2.com/fm-hot-kids-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/fmhotkids.php",
+      "https://www.tvporinternet2.com/live2/fmhotkids.php",
+      "https://www.tvporinternet2.com/live3/fmhotkids.php",
+      "https://www.tvporinternet2.com/live4/fmhotkids.php",
+      "https://www.tvporinternet2.com/live5/fmhotkids.php",
+      "https://www.tvporinternet2.com/live6/fmhotkids.php"
+    ]
+  },
+  {
+    "name": "Liga 1",
+    "logo": "https://www.tvporinternet2.com/imge/liga1.png",
+    "page": "https://www.tvporinternet2.com/liga-1-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/liga1.php",
+      "https://www.tvporinternet2.com/live2/liga1.php",
+      "https://www.tvporinternet2.com/live3/liga1.php",
+      "https://www.tvporinternet2.com/live4/liga1.php",
+      "https://www.tvporinternet2.com/live5/liga1.php",
+      "https://www.tvporinternet2.com/live6/liga1.php"
+    ]
+  },
+  {
+    "name": "Liga 1 Max",
+    "logo": "https://www.tvporinternet2.com/imge/liga1max.png",
+    "page": "https://www.tvporinternet2.com/liga-1-max-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/liga1max.php",
+      "https://www.tvporinternet2.com/live2/liga1max.php",
+      "https://www.tvporinternet2.com/live3/liga1max.php",
+      "https://www.tvporinternet2.com/live4/liga1max.php",
+      "https://www.tvporinternet2.com/live5/liga1max.php",
+      "https://www.tvporinternet2.com/live6/liga1max.php"
+    ]
+  },
+  {
+    "name": "TUDN",
+    "logo": "imge/tudn.png",
+    "page": "https://www.tvporinternet2.com/tudn-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/tudn.php",
+      "https://www.tvporinternet2.com/live2/tudn.php",
+      "https://www.tvporinternet2.com/live3/tudn.php",
+      "https://www.tvporinternet2.com/live4/tudn.php",
+      "https://www.tvporinternet2.com/live5/tudn.php",
+      "https://www.tvporinternet2.com/live6/tudn.php"
+    ]
+  },
+  {
+    "name": "VIX TUDN",
+    "logo": "imge/tudnxtra.png",
+    "page": "https://www.tvporinternet2.com/vix-tudn-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/vixtudn.php",
+      "https://www.tvporinternet2.com/live2/vixtudn.php",
+      "https://www.tvporinternet2.com/live3/vixtudn.php",
+      "https://www.tvporinternet2.com/live4/vixtudn.php",
+      "https://www.tvporinternet2.com/live5/vixtudn.php",
+      "https://www.tvporinternet2.com/live6/vixtudn.php"
+    ]
+  },
+  {
+    "name": "Sky Sports La Liga",
+    "logo": "imge/skysportslaliga.png",
+    "page": "https://www.tvporinternet2.com/sky-sports-la-liga-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/skysportslaliga.php",
+      "https://www.tvporinternet2.com/live2/skysportslaliga.php",
+      "https://www.tvporinternet2.com/live3/skysportslaliga.php",
+      "https://www.tvporinternet2.com/live4/skysportslaliga.php",
+      "https://www.tvporinternet2.com/live5/skysportslaliga.php",
+      "https://www.tvporinternet2.com/live6/skysportslaliga.php"
+    ]
+  },
+  {
+    "name": "TNT Sports",
+    "logo": "imge/tntsports.png",
+    "page": "https://www.tvporinternet2.com/tnt-sports-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/tntsports.php",
+      "https://www.tvporinternet2.com/live2/tntsports.php",
+      "https://www.tvporinternet2.com/live3/tntsports.php",
+      "https://www.tvporinternet2.com/live4/tntsports.php",
+      "https://www.tvporinternet2.com/live5/tntsports.php",
+      "https://www.tvporinternet2.com/live6/tntsports.php"
+    ]
+  },
+  {
+    "name": "TNT Sports Chile",
+    "logo": "imge/tntsports.png",
+    "page": "https://www.tvporinternet2.com/tnt-sports-chile-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/tntsportschile.php",
+      "https://www.tvporinternet2.com/live2/tntsportschile.php",
+      "https://www.tvporinternet2.com/live3/tntsportschile.php",
+      "https://www.tvporinternet2.com/live4/tntsportschile.php",
+      "https://www.tvporinternet2.com/live5/tntsportschile.php",
+      "https://www.tvporinternet2.com/live6/tntsportschile.php"
+    ]
+  },
+  {
+    "name": "Fox Sports Premium",
+    "logo": "imge/foxsportspremium.png",
+    "page": "https://www.tvporinternet2.com/fox-sports-premium-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/foxsportspremium.php",
+      "https://www.tvporinternet2.com/live2/foxsportspremium.php",
+      "https://www.tvporinternet2.com/live3/foxsportspremium.php",
+      "https://www.tvporinternet2.com/live4/foxsportspremium.php",
+      "https://www.tvporinternet2.com/live5/foxsportspremium.php",
+      "https://www.tvporinternet2.com/live6/foxsportspremium.php"
+    ]
+  },
+  {
+    "name": "TYC Sports",
+    "logo": "imge/tycsports.png",
+    "page": "https://www.tvporinternet2.com/tyc-sports-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/tycsports.php",
+      "https://www.tvporinternet2.com/live2/tycsports.php",
+      "https://www.tvporinternet2.com/live3/tycsports.php",
+      "https://www.tvporinternet2.com/live4/tycsports.php",
+      "https://www.tvporinternet2.com/live5/tycsports.php",
+      "https://www.tvporinternet2.com/live6/tycsports.php"
+    ]
+  },
+  {
+    "name": "Movistar La Liga",
+    "logo": "imge/movistarlaliga.png",
+    "page": "https://www.tvporinternet2.com/movistar-la-liga-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/movistarlaliga.php",
+      "https://www.tvporinternet2.com/live2/movistarlaliga.php",
+      "https://www.tvporinternet2.com/live3/movistarlaliga.php",
+      "https://www.tvporinternet2.com/live4/movistarlaliga.php",
+      "https://www.tvporinternet2.com/live5/movistarlaliga.php",
+      "https://www.tvporinternet2.com/live6/movistarlaliga.php"
+    ]
+  },
+  {
+    "name": "Movistar Liga De Campeones",
+    "logo": "imge/movistarligadecampeones.png",
+    "page": "https://www.tvporinternet2.com/movistar-liga-de-campeones-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/movistarligadecampeones.php",
+      "https://www.tvporinternet2.com/live2/movistarligadecampeones.php",
+      "https://www.tvporinternet2.com/live3/movistarligadecampeones.php",
+      "https://www.tvporinternet2.com/live4/movistarligadecampeones.php",
+      "https://www.tvporinternet2.com/live5/movistarligadecampeones.php",
+      "https://www.tvporinternet2.com/live6/movistarligadecampeones.php"
+    ]
+  },
+  {
+    "name": "Dazn F1",
+    "logo": "imge/daznf1.jpg",
+    "page": "https://www.tvporinternet2.com/dazn-f1-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/daznf1.php",
+      "https://www.tvporinternet2.com/live2/daznf1.php",
+      "https://www.tvporinternet2.com/live3/daznf1.php",
+      "https://www.tvporinternet2.com/live4/daznf1.php",
+      "https://www.tvporinternet2.com/live5/daznf1.php",
+      "https://www.tvporinternet2.com/live6/daznf1.php"
+    ]
+  },
+  {
+    "name": "Dazn La Liga",
+    "logo": "imge/daznlaliga1.png",
+    "page": "https://www.tvporinternet2.com/dazn-la-liga-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/daznlaliga.php",
+      "https://www.tvporinternet2.com/live2/daznlaliga.php",
+      "https://www.tvporinternet2.com/live3/daznlaliga.php",
+      "https://www.tvporinternet2.com/live4/daznlaliga.php",
+      "https://www.tvporinternet2.com/live5/daznlaliga.php",
+      "https://www.tvporinternet2.com/live6/daznlaliga.php"
+    ]
+  },
+  {
+    "name": "Bein Sports Xtra",
+    "logo": "imge/beinsportsxtra.png",
+    "page": "https://www.tvporinternet2.com/bein-sports-xtra-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/beinsportsxtra.php",
+      "https://www.tvporinternet2.com/live2/beinsportsxtra.php",
+      "https://www.tvporinternet2.com/live3/beinsportsxtra.php",
+      "https://www.tvporinternet2.com/live4/beinsportsxtra.php",
+      "https://www.tvporinternet2.com/live5/beinsportsxtra.php",
+      "https://www.tvporinternet2.com/live6/beinsportsxtra.php"
+    ]
+  },
+  {
+    "name": "Directv Sports",
+    "logo": "imge/directvsports.png",
+    "page": "https://www.tvporinternet2.com/directv-sports-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/directvsports.php",
+      "https://www.tvporinternet2.com/live2/directvsports.php",
+      "https://www.tvporinternet2.com/live3/directvsports.php",
+      "https://www.tvporinternet2.com/live4/directvsports.php",
+      "https://www.tvporinternet2.com/live5/directvsports.php",
+      "https://www.tvporinternet2.com/live6/directvsports.php"
+    ]
+  },
+  {
+    "name": "Directv Sports 2",
+    "logo": "imge/directvsports2.png",
+    "page": "https://www.tvporinternet2.com/directv-sports-2-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/directvsports2.php",
+      "https://www.tvporinternet2.com/live2/directvsports2.php",
+      "https://www.tvporinternet2.com/live3/directvsports2.php",
+      "https://www.tvporinternet2.com/live4/directvsports2.php",
+      "https://www.tvporinternet2.com/live5/directvsports2.php",
+      "https://www.tvporinternet2.com/live6/directvsports2.php"
+    ]
+  },
+  {
+    "name": "Directv Sports Plus",
+    "logo": "imge/directvsportsplus.png",
+    "page": "https://www.tvporinternet2.com/directv-sports-plus-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/directvsportsplus.php",
+      "https://www.tvporinternet2.com/live2/directvsportsplus.php",
+      "https://www.tvporinternet2.com/live3/directvsportsplus.php",
+      "https://www.tvporinternet2.com/live4/directvsportsplus.php",
+      "https://www.tvporinternet2.com/live5/directvsportsplus.php",
+      "https://www.tvporinternet2.com/live6/directvsportsplus.php"
+    ]
+  },
+  {
+    "name": "Espn Premium",
+    "logo": "https://www.tvporinternet2.com/imge/espnpremium.png",
+    "page": "https://www.tvporinternet2.com/espn-premium-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/espnpremium.php",
+      "https://www.tvporinternet2.com/live2/espnpremium.php",
+      "https://www.tvporinternet2.com/live3/espnpremium.php",
+      "https://www.tvporinternet2.com/live4/espnpremium.php",
+      "https://www.tvporinternet2.com/live5/espnpremium.php",
+      "https://www.tvporinternet2.com/live6/espnpremium.php"
+    ]
+  },
+  {
+    "name": "Espn",
+    "logo": "https://www.tvporinternet2.com/imge/espn.png",
+    "page": "https://www.tvporinternet2.com/espn-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/espn.php",
+      "https://www.tvporinternet2.com/live2/espn.php",
+      "https://www.tvporinternet2.com/live3/espn.php",
+      "https://www.tvporinternet2.com/live4/espn.php",
+      "https://www.tvporinternet2.com/live5/espn.php",
+      "https://www.tvporinternet2.com/live6/espn.php"
+    ]
+  },
+  {
+    "name": "Espn 2",
+    "logo": "imge/espn2.png",
+    "page": "https://www.tvporinternet2.com/espn-2-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/espn2.php",
+      "https://www.tvporinternet2.com/live2/espn2.php",
+      "https://www.tvporinternet2.com/live3/espn2.php",
+      "https://www.tvporinternet2.com/live4/espn2.php",
+      "https://www.tvporinternet2.com/live5/espn2.php",
+      "https://www.tvporinternet2.com/live6/espn2.php"
+    ]
+  },
+  {
+    "name": "Espn 3",
+    "logo": "imge/espn3.png",
+    "page": "https://www.tvporinternet2.com/espn-3-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/espn3.php",
+      "https://www.tvporinternet2.com/live2/espn3.php",
+      "https://www.tvporinternet2.com/live3/espn3.php",
+      "https://www.tvporinternet2.com/live4/espn3.php",
+      "https://www.tvporinternet2.com/live5/espn3.php",
+      "https://www.tvporinternet2.com/live6/espn3.php"
+    ]
+  },
+  {
+    "name": "Espn 4",
+    "logo": "imge/espn4.png",
+    "page": "https://www.tvporinternet2.com/espn-4-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/espn4.php",
+      "https://www.tvporinternet2.com/live2/espn4.php",
+      "https://www.tvporinternet2.com/live3/espn4.php",
+      "https://www.tvporinternet2.com/live4/espn4.php",
+      "https://www.tvporinternet2.com/live5/espn4.php",
+      "https://www.tvporinternet2.com/live6/espn4.php"
+    ]
+  },
+  {
+    "name": "Espn 5",
+    "logo": "imge/espn5.png",
+    "page": "https://www.tvporinternet2.com/espn-5-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/espn5.php",
+      "https://www.tvporinternet2.com/live2/espn5.php",
+      "https://www.tvporinternet2.com/live3/espn5.php",
+      "https://www.tvporinternet2.com/live4/espn5.php",
+      "https://www.tvporinternet2.com/live5/espn5.php",
+      "https://www.tvporinternet2.com/live6/espn5.php"
+    ]
+  },
+  {
+    "name": "Espn 6",
+    "logo": "imge/espn6.png",
+    "page": "https://www.tvporinternet2.com/espn-6-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/espn6.php",
+      "https://www.tvporinternet2.com/live2/espn6.php",
+      "https://www.tvporinternet2.com/live3/espn6.php",
+      "https://www.tvporinternet2.com/live4/espn6.php",
+      "https://www.tvporinternet2.com/live5/espn6.php",
+      "https://www.tvporinternet2.com/live6/espn6.php"
+    ]
+  },
+  {
+    "name": "Espn 7",
+    "logo": "imge/espn7.png",
+    "page": "https://www.tvporinternet2.com/espn-7-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/espn7.php",
+      "https://www.tvporinternet2.com/live2/espn7.php",
+      "https://www.tvporinternet2.com/live3/espn7.php",
+      "https://www.tvporinternet2.com/live4/espn7.php",
+      "https://www.tvporinternet2.com/live5/espn7.php",
+      "https://www.tvporinternet2.com/live6/espn7.php"
+    ]
+  },
+  {
+    "name": "Espn Mexico",
+    "logo": "https://www.tvporinternet2.com/imge/espnmexico.png",
+    "page": "https://www.tvporinternet2.com/espn-mexico-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/espnmexico.php",
+      "https://www.tvporinternet2.com/live2/espnmexico.php",
+      "https://www.tvporinternet2.com/live3/espnmexico.php",
+      "https://www.tvporinternet2.com/live4/espnmexico.php",
+      "https://www.tvporinternet2.com/live5/espnmexico.php",
+      "https://www.tvporinternet2.com/live6/espnmexico.php"
+    ]
+  },
+  {
+    "name": "Espn 2 Mexico",
+    "logo": "https://www.tvporinternet2.com/imge/espn2mexico.png",
+    "page": "https://www.tvporinternet2.com/espn-2-mexico-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/espn2mexico.php",
+      "https://www.tvporinternet2.com/live2/espn2mexico.php",
+      "https://www.tvporinternet2.com/live3/espn2mexico.php",
+      "https://www.tvporinternet2.com/live4/espn2mexico.php",
+      "https://www.tvporinternet2.com/live5/espn2mexico.php",
+      "https://www.tvporinternet2.com/live6/espn2mexico.php"
+    ]
+  },
+  {
+    "name": "Espn 3 Mexico",
+    "logo": "https://www.tvporinternet2.com/imge/espn3mexico.png",
+    "page": "https://www.tvporinternet2.com/espn-3-mexico-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/espn3mexico.php",
+      "https://www.tvporinternet2.com/live2/espn3mexico.php",
+      "https://www.tvporinternet2.com/live3/espn3mexico.php",
+      "https://www.tvporinternet2.com/live4/espn3mexico.php",
+      "https://www.tvporinternet2.com/live5/espn3mexico.php",
+      "https://www.tvporinternet2.com/live6/espn3mexico.php"
+    ]
+  },
+  {
+    "name": "Espn 4 Mexico",
+    "logo": "https://www.tvporinternet2.com/imge/espn4mexico.png",
+    "page": "https://www.tvporinternet2.com/espn-4-mexico-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/espn4mexico.php",
+      "https://www.tvporinternet2.com/live2/espn4mexico.php",
+      "https://www.tvporinternet2.com/live3/espn4mexico.php",
+      "https://www.tvporinternet2.com/live4/espn4mexico.php",
+      "https://www.tvporinternet2.com/live5/espn4mexico.php",
+      "https://www.tvporinternet2.com/live6/espn4mexico.php"
+    ]
+  },
+  {
+    "name": "Espn 5 Mexico",
+    "logo": "https://www.tvporinternet2.com/imge/espn5mexico.png",
+    "page": "https://www.tvporinternet2.com/espn-5-mexico-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/espn5mexico.php",
+      "https://www.tvporinternet2.com/live2/espn5mexico.php",
+      "https://www.tvporinternet2.com/live3/espn5mexico.php",
+      "https://www.tvporinternet2.com/live4/espn5mexico.php",
+      "https://www.tvporinternet2.com/live5/espn5mexico.php",
+      "https://www.tvporinternet2.com/live6/espn5mexico.php"
+    ]
+  },
+  {
+    "name": "Fox Sports",
+    "logo": "imge/foxsports.png",
+    "page": "https://www.tvporinternet2.com/fox-sports-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/foxsports.php",
+      "https://www.tvporinternet2.com/live2/foxsports.php",
+      "https://www.tvporinternet2.com/live3/foxsports.php",
+      "https://www.tvporinternet2.com/live4/foxsports.php",
+      "https://www.tvporinternet2.com/live5/foxsports.php",
+      "https://www.tvporinternet2.com/live6/foxsports.php"
+    ]
+  },
+  {
+    "name": "Fox Sports 2",
+    "logo": "imge/foxsports2.png",
+    "page": "https://www.tvporinternet2.com/fox-sports-2-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/foxsports2.php",
+      "https://www.tvporinternet2.com/live2/foxsports2.php",
+      "https://www.tvporinternet2.com/live3/foxsports2.php",
+      "https://www.tvporinternet2.com/live4/foxsports2.php",
+      "https://www.tvporinternet2.com/live5/foxsports2.php",
+      "https://www.tvporinternet2.com/live6/foxsports2.php"
+    ]
+  },
+  {
+    "name": "Fox Sports 3",
+    "logo": "imge/foxsports3.png",
+    "page": "https://www.tvporinternet2.com/fox-sports-3-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/foxsports3.php",
+      "https://www.tvporinternet2.com/live2/foxsports3.php",
+      "https://www.tvporinternet2.com/live3/foxsports3.php",
+      "https://www.tvporinternet2.com/live4/foxsports3.php",
+      "https://www.tvporinternet2.com/live5/foxsports3.php",
+      "https://www.tvporinternet2.com/live6/foxsports3.php"
+    ]
+  },
+  {
+    "name": "Fox Sports Mexico",
+    "logo": "https://www.tvporinternet2.com/imge/foxsportsmx.png",
+    "page": "https://www.tvporinternet2.com/fox-sports-mexico-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/foxsportsmexico.php",
+      "https://www.tvporinternet2.com/live2/foxsportsmexico.php",
+      "https://www.tvporinternet2.com/live3/foxsportsmexico.php",
+      "https://www.tvporinternet2.com/live4/foxsportsmexico.php",
+      "https://www.tvporinternet2.com/live5/foxsportsmexico.php",
+      "https://www.tvporinternet2.com/live6/foxsportsmexico.php"
+    ]
+  },
+  {
+    "name": "Fox Sports 2 Mexico",
+    "logo": "https://www.tvporinternet2.com/imge/foxsports2mx.png",
+    "page": "https://www.tvporinternet2.com/fox-sports-2-mexico-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/foxsports2mexico.php",
+      "https://www.tvporinternet2.com/live2/foxsports2mexico.php",
+      "https://www.tvporinternet2.com/live3/foxsports2mexico.php",
+      "https://www.tvporinternet2.com/live4/foxsports2mexico.php",
+      "https://www.tvporinternet2.com/live5/foxsports2mexico.php",
+      "https://www.tvporinternet2.com/live6/foxsports2mexico.php"
+    ]
+  },
+  {
+    "name": "Fox Sports 3 Mexico",
+    "logo": "https://www.tvporinternet2.com/imge/foxsports3mexico.png",
+    "page": "https://www.tvporinternet2.com/fox-sports-3-mexico-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/foxsports3mexico.php",
+      "https://www.tvporinternet2.com/live2/foxsports3mexico.php",
+      "https://www.tvporinternet2.com/live3/foxsports3mexico.php",
+      "https://www.tvporinternet2.com/live4/foxsports3mexico.php",
+      "https://www.tvporinternet2.com/live5/foxsports3mexico.php",
+      "https://www.tvporinternet2.com/live6/foxsports3mexico.php"
+    ]
+  },
+  {
+    "name": "Win Sports Plus",
+    "logo": "imge/winsportsplus.png",
+    "page": "https://www.tvporinternet2.com/win-sports-plus-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/winsportsplus.php",
+      "https://www.tvporinternet2.com/live2/winsportsplus.php",
+      "https://www.tvporinternet2.com/live3/winsportsplus.php",
+      "https://www.tvporinternet2.com/live4/winsportsplus.php",
+      "https://www.tvporinternet2.com/live5/winsportsplus.php",
+      "https://www.tvporinternet2.com/live6/winsportsplus.php"
+    ]
+  },
+  {
+    "name": "MLB Network",
+    "logo": "imge/mlbnetwork.png",
+    "page": "https://www.tvporinternet2.com/mlb-network-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/mlbnetwork.php",
+      "https://www.tvporinternet2.com/live2/mlbnetwork.php",
+      "https://www.tvporinternet2.com/live3/mlbnetwork.php",
+      "https://www.tvporinternet2.com/live4/mlbnetwork.php",
+      "https://www.tvporinternet2.com/live5/mlbnetwork.php",
+      "https://www.tvporinternet2.com/live6/mlbnetwork.php"
+    ]
+  },
+  {
+    "name": "Telefe",
+    "logo": "imge/telefe.png",
+    "page": "https://www.tvporinternet2.com/telefe-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/telefe.php",
+      "https://www.tvporinternet2.com/live2/telefe.php",
+      "https://www.tvporinternet2.com/live3/telefe.php",
+      "https://www.tvporinternet2.com/live4/telefe.php",
+      "https://www.tvporinternet2.com/live5/telefe.php",
+      "https://www.tvporinternet2.com/live6/telefe.php"
+    ]
+  },
+  {
+    "name": "El Trece",
+    "logo": "imge/eltrece.png",
+    "page": "https://www.tvporinternet2.com/el-trece-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/eltrece.php",
+      "https://www.tvporinternet2.com/live2/eltrece.php",
+      "https://www.tvporinternet2.com/live3/eltrece.php",
+      "https://www.tvporinternet2.com/live4/eltrece.php",
+      "https://www.tvporinternet2.com/live5/eltrece.php",
+      "https://www.tvporinternet2.com/live6/eltrece.php"
+    ]
+  },
+  {
+    "name": "Telemundo 51",
+    "logo": "imge/telemundo51.png",
+    "page": "https://www.tvporinternet2.com/telemundo-51-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/telemundo51.php",
+      "https://www.tvporinternet2.com/live2/telemundo51.php",
+      "https://www.tvporinternet2.com/live3/telemundo51.php",
+      "https://www.tvporinternet2.com/live4/telemundo51.php",
+      "https://www.tvporinternet2.com/live5/telemundo51.php",
+      "https://www.tvporinternet2.com/live6/telemundo51.php"
+    ]
+  },
+  {
+    "name": "Telemundo Puerto Rico",
+    "logo": "imge/telemundopuertorico.png",
+    "page": "https://www.tvporinternet2.com/telemundo-puerto-rico-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/telemundopuertorico.php",
+      "https://www.tvporinternet2.com/live2/telemundopuertorico.php",
+      "https://www.tvporinternet2.com/live3/telemundopuertorico.php",
+      "https://www.tvporinternet2.com/live4/telemundopuertorico.php",
+      "https://www.tvporinternet2.com/live5/telemundopuertorico.php",
+      "https://www.tvporinternet2.com/live6/telemundopuertorico.php"
+    ]
+  },
+  {
+    "name": "Telemundo Internacional",
+    "logo": "imge/telemundointernacional.png",
+    "page": "https://www.tvporinternet2.com/telemundo-internacional-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/telemundointernacional.php",
+      "https://www.tvporinternet2.com/live2/telemundointernacional.php",
+      "https://www.tvporinternet2.com/live3/telemundointernacional.php",
+      "https://www.tvporinternet2.com/live4/telemundointernacional.php",
+      "https://www.tvporinternet2.com/live5/telemundointernacional.php",
+      "https://www.tvporinternet2.com/live6/telemundointernacional.php"
+    ]
+  },
+  {
+    "name": "Univision",
+    "logo": "imge/univision.png",
+    "page": "https://www.tvporinternet2.com/univision-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/univision.php",
+      "https://www.tvporinternet2.com/live2/univision.php",
+      "https://www.tvporinternet2.com/live3/univision.php",
+      "https://www.tvporinternet2.com/live4/univision.php",
+      "https://www.tvporinternet2.com/live5/univision.php",
+      "https://www.tvporinternet2.com/live6/univision.php"
+    ]
+  },
+  {
+    "name": "Pasiones",
+    "logo": "imge/pasiones.png",
+    "page": "https://www.tvporinternet2.com/pasiones-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/pasiones.php",
+      "https://www.tvporinternet2.com/live2/pasiones.php",
+      "https://www.tvporinternet2.com/live3/pasiones.php",
+      "https://www.tvporinternet2.com/live4/pasiones.php",
+      "https://www.tvporinternet2.com/live5/pasiones.php",
+      "https://www.tvporinternet2.com/live6/pasiones.php"
+    ]
+  },
+  {
+    "name": "Galavision",
+    "logo": "imge/galavision.png",
+    "page": "https://www.tvporinternet2.com/galavision-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/galavision.php",
+      "https://www.tvporinternet2.com/live2/galavision.php",
+      "https://www.tvporinternet2.com/live3/galavision.php",
+      "https://www.tvporinternet2.com/live4/galavision.php",
+      "https://www.tvporinternet2.com/live5/galavision.php",
+      "https://www.tvporinternet2.com/live6/galavision.php"
+    ]
+  },
+  {
+    "name": "Tlnovelas",
+    "logo": "imge/tlnovelas.png",
+    "page": "https://www.tvporinternet2.com/tlnovelas-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/tlnovelas.php",
+      "https://www.tvporinternet2.com/live2/tlnovelas.php",
+      "https://www.tvporinternet2.com/live3/tlnovelas.php",
+      "https://www.tvporinternet2.com/live4/tlnovelas.php",
+      "https://www.tvporinternet2.com/live5/tlnovelas.php",
+      "https://www.tvporinternet2.com/live6/tlnovelas.php"
+    ]
+  },
+  {
+    "name": "Las Estrellas",
+    "logo": "imge/lasestrellas.png",
+    "page": "https://www.tvporinternet2.com/las-estrellas-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/lasestrellas.php",
+      "https://www.tvporinternet2.com/live2/lasestrellas.php",
+      "https://www.tvporinternet2.com/live3/lasestrellas.php",
+      "https://www.tvporinternet2.com/live4/lasestrellas.php",
+      "https://www.tvporinternet2.com/live5/lasestrellas.php",
+      "https://www.tvporinternet2.com/live6/lasestrellas.php"
+    ]
+  },
+  {
+    "name": "Antena 3",
+    "logo": "imge/antena3.png",
+    "page": "https://www.tvporinternet2.com/antena-3-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/antena3.php",
+      "https://www.tvporinternet2.com/live2/antena3.php",
+      "https://www.tvporinternet2.com/live3/antena3.php",
+      "https://www.tvporinternet2.com/live4/antena3.php",
+      "https://www.tvporinternet2.com/live5/antena3.php",
+      "https://www.tvporinternet2.com/live6/antena3.php"
+    ]
+  },
+  {
+    "name": "DW Español",
+    "logo": "imge/dw.png",
+    "page": "https://www.tvporinternet2.com/dw-espanol-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/dwespanol.php",
+      "https://www.tvporinternet2.com/live2/dwespanol.php",
+      "https://www.tvporinternet2.com/live3/dwespanol.php",
+      "https://www.tvporinternet2.com/live4/dwespanol.php",
+      "https://www.tvporinternet2.com/live5/dwespanol.php",
+      "https://www.tvporinternet2.com/live6/dwespanol.php"
+    ]
+  },
+  {
+    "name": "Caracol",
+    "logo": "imge/caracol.png",
+    "page": "https://www.tvporinternet2.com/caracol-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/caracol.php",
+      "https://www.tvporinternet2.com/live2/caracol.php",
+      "https://www.tvporinternet2.com/live3/caracol.php",
+      "https://www.tvporinternet2.com/live4/caracol.php",
+      "https://www.tvporinternet2.com/live5/caracol.php",
+      "https://www.tvporinternet2.com/live6/caracol.php"
+    ]
+  },
+  {
+    "name": "RCN",
+    "logo": "imge/rcn.png",
+    "page": "https://www.tvporinternet2.com/rcn-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/rcn.php",
+      "https://www.tvporinternet2.com/live2/rcn.php",
+      "https://www.tvporinternet2.com/live3/rcn.php",
+      "https://www.tvporinternet2.com/live4/rcn.php",
+      "https://www.tvporinternet2.com/live5/rcn.php",
+      "https://www.tvporinternet2.com/live6/rcn.php"
+    ]
+  },
+  {
+    "name": "Latina",
+    "logo": "imge/latina.png",
+    "page": "https://www.tvporinternet2.com/latina-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/latina.php",
+      "https://www.tvporinternet2.com/live2/latina.php",
+      "https://www.tvporinternet2.com/live3/latina.php",
+      "https://www.tvporinternet2.com/live4/latina.php",
+      "https://www.tvporinternet2.com/live5/latina.php",
+      "https://www.tvporinternet2.com/live6/latina.php"
+    ]
+  },
+  {
+    "name": "America TV",
+    "logo": "imge/americatv.png",
+    "page": "https://www.tvporinternet2.com/america-tv-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/americatv.php",
+      "https://www.tvporinternet2.com/live2/americatv.php",
+      "https://www.tvporinternet2.com/live3/americatv.php",
+      "https://www.tvporinternet2.com/live4/americatv.php",
+      "https://www.tvporinternet2.com/live5/americatv.php",
+      "https://www.tvporinternet2.com/live6/americatv.php"
+    ]
+  },
+  {
+    "name": "ATV",
+    "logo": "imge/atv.png",
+    "page": "https://www.tvporinternet2.com/atv-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/atv.php",
+      "https://www.tvporinternet2.com/live2/atv.php",
+      "https://www.tvporinternet2.com/live3/atv.php",
+      "https://www.tvporinternet2.com/live4/atv.php",
+      "https://www.tvporinternet2.com/live5/atv.php",
+      "https://www.tvporinternet2.com/live6/atv.php"
+    ]
+  },
+  {
+    "name": "Unicable",
+    "logo": "imge/unicable.png",
+    "page": "https://www.tvporinternet2.com/unicable-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/unicable.php",
+      "https://www.tvporinternet2.com/live2/unicable.php",
+      "https://www.tvporinternet2.com/live3/unicable.php",
+      "https://www.tvporinternet2.com/live4/unicable.php",
+      "https://www.tvporinternet2.com/live5/unicable.php",
+      "https://www.tvporinternet2.com/live6/unicable.php"
+    ]
+  },
+  {
+    "name": "Imagen TV",
+    "logo": "imge/imagentv.png",
+    "page": "https://www.tvporinternet2.com/imagen-tv-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/imagentv.php",
+      "https://www.tvporinternet2.com/live2/imagentv.php",
+      "https://www.tvporinternet2.com/live3/imagentv.php",
+      "https://www.tvporinternet2.com/live4/imagentv.php",
+      "https://www.tvporinternet2.com/live5/imagentv.php",
+      "https://www.tvporinternet2.com/live6/imagentv.php"
+    ]
+  },
+  {
+    "name": "Azteca 7",
+    "logo": "imge/azteca7.png",
+    "page": "https://www.tvporinternet2.com/azteca-7-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/azteca7.php",
+      "https://www.tvporinternet2.com/live2/azteca7.php",
+      "https://www.tvporinternet2.com/live3/azteca7.php",
+      "https://www.tvporinternet2.com/live4/azteca7.php",
+      "https://www.tvporinternet2.com/live5/azteca7.php",
+      "https://www.tvporinternet2.com/live6/azteca7.php"
+    ]
+  },
+  {
+    "name": "Azteca Uno",
+    "logo": "imge/aztecauno.png",
+    "page": "https://www.tvporinternet2.com/azteca-uno-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/aztecauno.php",
+      "https://www.tvporinternet2.com/live2/aztecauno.php",
+      "https://www.tvporinternet2.com/live3/aztecauno.php",
+      "https://www.tvporinternet2.com/live4/aztecauno.php",
+      "https://www.tvporinternet2.com/live5/aztecauno.php",
+      "https://www.tvporinternet2.com/live6/aztecauno.php"
+    ]
+  },
+  {
+    "name": "Canal 5",
+    "logo": "imge/canal5.png",
+    "page": "https://www.tvporinternet2.com/canal-5-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/canal5.php",
+      "https://www.tvporinternet2.com/live2/canal5.php",
+      "https://www.tvporinternet2.com/live3/canal5.php",
+      "https://www.tvporinternet2.com/live4/canal5.php",
+      "https://www.tvporinternet2.com/live5/canal5.php",
+      "https://www.tvporinternet2.com/live6/canal5.php"
+    ]
+  },
+  {
+    "name": "TNT Novelas",
+    "logo": "imge/tntnovelas.png",
+    "page": "https://www.tvporinternet2.com/tnt-novelas-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/tntnovelas.php",
+      "https://www.tvporinternet2.com/live2/tntnovelas.php",
+      "https://www.tvporinternet2.com/live3/tntnovelas.php",
+      "https://www.tvporinternet2.com/live4/tntnovelas.php",
+      "https://www.tvporinternet2.com/live5/tntnovelas.php",
+      "https://www.tvporinternet2.com/live6/tntnovelas.php"
+    ]
+  },
+  {
+    "name": "Disney Channel",
+    "logo": "imge/disneychannel.png",
+    "page": "https://www.tvporinternet2.com/disney-channel-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/disneychannel.php",
+      "https://www.tvporinternet2.com/live2/disneychannel.php",
+      "https://www.tvporinternet2.com/live3/disneychannel.php",
+      "https://www.tvporinternet2.com/live4/disneychannel.php",
+      "https://www.tvporinternet2.com/live5/disneychannel.php",
+      "https://www.tvporinternet2.com/live6/disneychannel.php"
+    ]
+  },
+  {
+    "name": "Cartoon Network",
+    "logo": "imge/cartoonnetwork.png",
+    "page": "https://www.tvporinternet2.com/cartoon-network-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/cartoonnetwork.php",
+      "https://www.tvporinternet2.com/live2/cartoonnetwork.php",
+      "https://www.tvporinternet2.com/live3/cartoonnetwork.php",
+      "https://www.tvporinternet2.com/live4/cartoonnetwork.php",
+      "https://www.tvporinternet2.com/live5/cartoonnetwork.php",
+      "https://www.tvporinternet2.com/live6/cartoonnetwork.php"
+    ]
+  },
+  {
+    "name": "Tooncast",
+    "logo": "imge/tooncast.png",
+    "page": "https://www.tvporinternet2.com/tooncast-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/tooncast.php",
+      "https://www.tvporinternet2.com/live2/tooncast.php",
+      "https://www.tvporinternet2.com/live3/tooncast.php",
+      "https://www.tvporinternet2.com/live4/tooncast.php",
+      "https://www.tvporinternet2.com/live5/tooncast.php",
+      "https://www.tvporinternet2.com/live6/tooncast.php"
+    ]
+  },
+  {
+    "name": "Discovery Channel",
+    "logo": "imge/discoverychannel.png",
+    "page": "https://www.tvporinternet2.com/discovery-channel-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/discoverychannel.php",
+      "https://www.tvporinternet2.com/live2/discoverychannel.php",
+      "https://www.tvporinternet2.com/live3/discoverychannel.php",
+      "https://www.tvporinternet2.com/live4/discoverychannel.php",
+      "https://www.tvporinternet2.com/live5/discoverychannel.php",
+      "https://www.tvporinternet2.com/live6/discoverychannel.php"
+    ]
+  },
+  {
+    "name": "ID Investigation",
+    "logo": "imge/idinvestigation.png",
+    "page": "https://www.tvporinternet2.com/id-investigation-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/idinvestigation.php",
+      "https://www.tvporinternet2.com/live2/idinvestigation.php",
+      "https://www.tvporinternet2.com/live3/idinvestigation.php",
+      "https://www.tvporinternet2.com/live4/idinvestigation.php",
+      "https://www.tvporinternet2.com/live5/idinvestigation.php",
+      "https://www.tvporinternet2.com/live6/idinvestigation.php"
+    ]
+  },
+  {
+    "name": "Discovery H&H",
+    "logo": "imge/discoveryhyh.png",
+    "page": "https://www.tvporinternet2.com/discovery-hyh-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/discoveryhyh.php",
+      "https://www.tvporinternet2.com/live2/discoveryhyh.php",
+      "https://www.tvporinternet2.com/live3/discoveryhyh.php",
+      "https://www.tvporinternet2.com/live4/discoveryhyh.php",
+      "https://www.tvporinternet2.com/live5/discoveryhyh.php",
+      "https://www.tvporinternet2.com/live6/discoveryhyh.php"
+    ]
+  },
+  {
+    "name": "Discovery A&E",
+    "logo": "imge/discoveryaye.png",
+    "page": "https://www.tvporinternet2.com/discovery-aye-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/discoveryaye.php",
+      "https://www.tvporinternet2.com/live2/discoveryaye.php",
+      "https://www.tvporinternet2.com/live3/discoveryaye.php",
+      "https://www.tvporinternet2.com/live4/discoveryaye.php",
+      "https://www.tvporinternet2.com/live5/discoveryaye.php",
+      "https://www.tvporinternet2.com/live6/discoveryaye.php"
+    ]
+  },
+  {
+    "name": "History",
+    "logo": "imge/history.png",
+    "page": "https://www.tvporinternet2.com/history-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/history.php",
+      "https://www.tvporinternet2.com/live2/history.php",
+      "https://www.tvporinternet2.com/live3/history.php",
+      "https://www.tvporinternet2.com/live4/history.php",
+      "https://www.tvporinternet2.com/live5/history.php",
+      "https://www.tvporinternet2.com/live6/history.php"
+    ]
+  },
+  {
+    "name": "History 2",
+    "logo": "imge/history2.png",
+    "page": "https://www.tvporinternet2.com/history-2-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/history2.php",
+      "https://www.tvporinternet2.com/live2/history2.php",
+      "https://www.tvporinternet2.com/live3/history2.php",
+      "https://www.tvporinternet2.com/live4/history2.php",
+      "https://www.tvporinternet2.com/live5/history2.php",
+      "https://www.tvporinternet2.com/live6/history2.php"
+    ]
+  },
+  {
+    "name": "Animal Planet",
+    "logo": "imge/animalplanet.png",
+    "page": "https://www.tvporinternet2.com/animal-planet-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/animalplanet.php",
+      "https://www.tvporinternet2.com/live2/animalplanet.php",
+      "https://www.tvporinternet2.com/live3/animalplanet.php",
+      "https://www.tvporinternet2.com/live4/animalplanet.php",
+      "https://www.tvporinternet2.com/live5/animalplanet.php",
+      "https://www.tvporinternet2.com/live6/animalplanet.php"
+    ]
+  },
+  {
+    "name": "Nat Geo",
+    "logo": "imge/natgeo.png",
+    "page": "https://www.tvporinternet2.com/nat-geo-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/natgeo.php",
+      "https://www.tvporinternet2.com/live2/natgeo.php",
+      "https://www.tvporinternet2.com/live3/natgeo.php",
+      "https://www.tvporinternet2.com/live4/natgeo.php",
+      "https://www.tvporinternet2.com/live5/natgeo.php",
+      "https://www.tvporinternet2.com/live6/natgeo.php"
+    ]
+  },
+  {
+    "name": "Universal Channel",
+    "logo": "imge/universalchannel.png",
+    "page": "https://www.tvporinternet2.com/universal-channel-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/universalchannel.php",
+      "https://www.tvporinternet2.com/live2/universalchannel.php",
+      "https://www.tvporinternet2.com/live3/universalchannel.php",
+      "https://www.tvporinternet2.com/live4/universalchannel.php",
+      "https://www.tvporinternet2.com/live5/universalchannel.php",
+      "https://www.tvporinternet2.com/live6/universalchannel.php"
+    ]
+  },
+  {
+    "name": "Universal Premiere",
+    "logo": "imge/universalpremiere.png",
+    "page": "https://www.tvporinternet2.com/universal-premiere-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/universalpremiere.php",
+      "https://www.tvporinternet2.com/live2/universalpremiere.php",
+      "https://www.tvporinternet2.com/live3/universalpremiere.php",
+      "https://www.tvporinternet2.com/live4/universalpremiere.php",
+      "https://www.tvporinternet2.com/live5/universalpremiere.php",
+      "https://www.tvporinternet2.com/live6/universalpremiere.php"
+    ]
+  },
+  {
+    "name": "Universal Cinema",
+    "logo": "imge/universalcinema.png",
+    "page": "https://www.tvporinternet2.com/universal-cinema-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/universalcinema.php",
+      "https://www.tvporinternet2.com/live2/universalcinema.php",
+      "https://www.tvporinternet2.com/live3/universalcinema.php",
+      "https://www.tvporinternet2.com/live4/universalcinema.php",
+      "https://www.tvporinternet2.com/live5/universalcinema.php",
+      "https://www.tvporinternet2.com/live6/universalcinema.php"
+    ]
+  },
+  {
+    "name": "TNT",
+    "logo": "imge/tnt.png",
+    "page": "https://www.tvporinternet2.com/tnt-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/tnt.php",
+      "https://www.tvporinternet2.com/live2/tnt.php",
+      "https://www.tvporinternet2.com/live3/tnt.php",
+      "https://www.tvporinternet2.com/live4/tnt.php",
+      "https://www.tvporinternet2.com/live5/tnt.php",
+      "https://www.tvporinternet2.com/live6/tnt.php"
+    ]
+  },
+  {
+    "name": "TNT Series",
+    "logo": "imge/tntseries.png",
+    "page": "https://www.tvporinternet2.com/tnt-series-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/tntseries.php",
+      "https://www.tvporinternet2.com/live2/tntseries.php",
+      "https://www.tvporinternet2.com/live3/tntseries.php",
+      "https://www.tvporinternet2.com/live4/tntseries.php",
+      "https://www.tvporinternet2.com/live5/tntseries.php",
+      "https://www.tvporinternet2.com/live6/tntseries.php"
+    ]
+  },
+  {
+    "name": "Star Channel",
+    "logo": "imge/star.png",
+    "page": "https://www.tvporinternet2.com/star-channel-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/starchannel.php",
+      "https://www.tvporinternet2.com/live2/starchannel.php",
+      "https://www.tvporinternet2.com/live3/starchannel.php",
+      "https://www.tvporinternet2.com/live4/starchannel.php",
+      "https://www.tvporinternet2.com/live5/starchannel.php",
+      "https://www.tvporinternet2.com/live6/starchannel.php"
+    ]
+  },
+  {
+    "name": "Cinemax",
+    "logo": "imge/cinemax.png",
+    "page": "https://www.tvporinternet2.com/cinemax-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/cinemax.php",
+      "https://www.tvporinternet2.com/live2/cinemax.php",
+      "https://www.tvporinternet2.com/live3/cinemax.php",
+      "https://www.tvporinternet2.com/live4/cinemax.php",
+      "https://www.tvporinternet2.com/live5/cinemax.php",
+      "https://www.tvporinternet2.com/live6/cinemax.php"
+    ]
+  },
+  {
+    "name": "Space",
+    "logo": "imge/space.png",
+    "page": "https://www.tvporinternet2.com/space-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/space.php",
+      "https://www.tvporinternet2.com/live2/space.php",
+      "https://www.tvporinternet2.com/live3/space.php",
+      "https://www.tvporinternet2.com/live4/space.php",
+      "https://www.tvporinternet2.com/live5/space.php",
+      "https://www.tvporinternet2.com/live6/space.php"
+    ]
+  },
+  {
+    "name": "Syfy",
+    "logo": "imge/usa.png",
+    "page": "https://www.tvporinternet2.com/usa-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/usa.php",
+      "https://www.tvporinternet2.com/live2/usa.php",
+      "https://www.tvporinternet2.com/live3/usa.php",
+      "https://www.tvporinternet2.com/live4/usa.php",
+      "https://www.tvporinternet2.com/live5/usa.php",
+      "https://www.tvporinternet2.com/live6/usa.php"
+    ]
+  },
+  {
+    "name": "Warner Channel",
+    "logo": "imge/warnerbrostv.png",
+    "page": "https://www.tvporinternet2.com/warner-channel-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/warnerchannel.php",
+      "https://www.tvporinternet2.com/live2/warnerchannel.php",
+      "https://www.tvporinternet2.com/live3/warnerchannel.php",
+      "https://www.tvporinternet2.com/live4/warnerchannel.php",
+      "https://www.tvporinternet2.com/live5/warnerchannel.php",
+      "https://www.tvporinternet2.com/live6/warnerchannel.php"
+    ]
+  },
+  {
+    "name": "Cinecanal",
+    "logo": "imge/cinecanal.png",
+    "page": "https://www.tvporinternet2.com/cinecanal-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/cinecanal.php",
+      "https://www.tvporinternet2.com/live2/cinecanal.php",
+      "https://www.tvporinternet2.com/live3/cinecanal.php",
+      "https://www.tvporinternet2.com/live4/cinecanal.php",
+      "https://www.tvporinternet2.com/live5/cinecanal.php",
+      "https://www.tvporinternet2.com/live6/cinecanal.php"
+    ]
+  },
+  {
+    "name": "FX",
+    "logo": "imge/fx.png",
+    "page": "https://www.tvporinternet2.com/fx-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/fx.php",
+      "https://www.tvporinternet2.com/live2/fx.php",
+      "https://www.tvporinternet2.com/live3/fx.php",
+      "https://www.tvporinternet2.com/live4/fx.php",
+      "https://www.tvporinternet2.com/live5/fx.php",
+      "https://www.tvporinternet2.com/live6/fx.php"
+    ]
+  },
+  {
+    "name": "AXN",
+    "logo": "imge/axn.png",
+    "page": "https://www.tvporinternet2.com/axn-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/axn.php",
+      "https://www.tvporinternet2.com/live2/axn.php",
+      "https://www.tvporinternet2.com/live3/axn.php",
+      "https://www.tvporinternet2.com/live4/axn.php",
+      "https://www.tvporinternet2.com/live5/axn.php",
+      "https://www.tvporinternet2.com/live6/axn.php"
+    ]
+  },
+  {
+    "name": "AMC",
+    "logo": "imge/amc.png",
+    "page": "https://www.tvporinternet2.com/amc-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/amc.php",
+      "https://www.tvporinternet2.com/live2/amc.php",
+      "https://www.tvporinternet2.com/live3/amc.php",
+      "https://www.tvporinternet2.com/live4/amc.php",
+      "https://www.tvporinternet2.com/live5/amc.php",
+      "https://www.tvporinternet2.com/live6/amc.php"
+    ]
+  },
+  {
+    "name": "Studio Universal",
+    "logo": "imge/studiouniversal.png",
+    "page": "https://www.tvporinternet2.com/studio-universal-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/studiouniversal.php",
+      "https://www.tvporinternet2.com/live2/studiouniversal.php",
+      "https://www.tvporinternet2.com/live3/studiouniversal.php",
+      "https://www.tvporinternet2.com/live4/studiouniversal.php",
+      "https://www.tvporinternet2.com/live5/studiouniversal.php",
+      "https://www.tvporinternet2.com/live6/studiouniversal.php"
+    ]
+  },
+  {
+    "name": "Panico HD",
+    "logo": "imge/panico.png",
+    "page": "https://www.tvporinternet2.com/panico-hd-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/panico.php",
+      "https://www.tvporinternet2.com/live2/panico.php",
+      "https://www.tvporinternet2.com/live3/panico.php",
+      "https://www.tvporinternet2.com/live4/panico.php",
+      "https://www.tvporinternet2.com/live5/panico.php",
+      "https://www.tvporinternet2.com/live6/panico.php"
+    ]
+  },
+  {
+    "name": "MultiPremier",
+    "logo": "imge/multipremier.png",
+    "page": "https://www.tvporinternet2.com/multipremier-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/multipremier.php",
+      "https://www.tvporinternet2.com/live2/multipremier.php",
+      "https://www.tvporinternet2.com/live3/multipremier.php",
+      "https://www.tvporinternet2.com/live4/multipremier.php",
+      "https://www.tvporinternet2.com/live5/multipremier.php",
+      "https://www.tvporinternet2.com/live6/multipremier.php"
+    ]
+  },
+  {
+    "name": "Golden",
+    "logo": "imge/golden.png",
+    "page": "https://www.tvporinternet2.com/golden-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/golden.php",
+      "https://www.tvporinternet2.com/live2/golden.php",
+      "https://www.tvporinternet2.com/live3/golden.php",
+      "https://www.tvporinternet2.com/live4/golden.php",
+      "https://www.tvporinternet2.com/live5/golden.php",
+      "https://www.tvporinternet2.com/live6/golden.php"
+    ]
+  },
+  {
+    "name": "Golden Plus",
+    "logo": "imge/goldenplus.png",
+    "page": "https://www.tvporinternet2.com/golden-plus-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/goldenplus.php",
+      "https://www.tvporinternet2.com/live2/goldenplus.php",
+      "https://www.tvporinternet2.com/live3/goldenplus.php",
+      "https://www.tvporinternet2.com/live4/goldenplus.php",
+      "https://www.tvporinternet2.com/live5/goldenplus.php",
+      "https://www.tvporinternet2.com/live6/goldenplus.php"
+    ]
+  },
+  {
+    "name": "Golden Edge",
+    "logo": "imge/goldenedge.png",
+    "page": "https://www.tvporinternet2.com/golden-edge-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/goldenedge.php",
+      "https://www.tvporinternet2.com/live2/goldenedge.php",
+      "https://www.tvporinternet2.com/live3/goldenedge.php",
+      "https://www.tvporinternet2.com/live4/goldenedge.php",
+      "https://www.tvporinternet2.com/live5/goldenedge.php",
+      "https://www.tvporinternet2.com/live6/goldenedge.php"
+    ]
+  },
+  {
+    "name": "Golden Premier",
+    "logo": "imge/goldenpremier.png",
+    "page": "https://www.tvporinternet2.com/golden-premier-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/goldenpremier.php",
+      "https://www.tvporinternet2.com/live2/goldenpremier.php",
+      "https://www.tvporinternet2.com/live3/goldenpremier.php",
+      "https://www.tvporinternet2.com/live4/goldenpremier.php",
+      "https://www.tvporinternet2.com/live5/goldenpremier.php",
+      "https://www.tvporinternet2.com/live6/goldenpremier.php"
+    ]
+  },
+  {
+    "name": "Canal Sony",
+    "logo": "imge/canalsony.png",
+    "page": "https://www.tvporinternet2.com/canal-sony-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/canalsony.php",
+      "https://www.tvporinternet2.com/live2/canalsony.php",
+      "https://www.tvporinternet2.com/live3/canalsony.php",
+      "https://www.tvporinternet2.com/live4/canalsony.php",
+      "https://www.tvporinternet2.com/live5/canalsony.php",
+      "https://www.tvporinternet2.com/live6/canalsony.php"
+    ]
+  },
+  {
+    "name": "Extrema TV",
+    "logo": "imge/extrematv.png",
+    "page": "https://www.tvporinternet2.com/extrema-tv-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/extrematv.php",
+      "https://www.tvporinternet2.com/live2/extrematv.php",
+      "https://www.tvporinternet2.com/live3/extrematv.php",
+      "https://www.tvporinternet2.com/live4/extrematv.php",
+      "https://www.tvporinternet2.com/live5/extrematv.php",
+      "https://www.tvporinternet2.com/live6/extrematv.php"
+    ]
+  },
+  {
+    "name": "Distrito Comedia",
+    "logo": "imge/distritocomedia.png",
+    "page": "https://www.tvporinternet2.com/distrito-comedia-en-vivo-por-internet.html",
+    "players": [
+      "https://www.tvporinternet2.com/live/distritocomedia.php",
+      "https://www.tvporinternet2.com/live2/distritocomedia.php",
+      "https://www.tvporinternet2.com/live3/distritocomedia.php",
+      "https://www.tvporinternet2.com/live4/distritocomedia.php",
+      "https://www.tvporinternet2.com/live5/distritocomedia.php",
+      "https://www.tvporinternet2.com/live6/distritocomedia.php"
+    ]
+  }
+]
